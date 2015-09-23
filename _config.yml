@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://johndswanson.github.io
+title: swannysec
+tagline: Musings on InfoSec
+description: Documenting my thoughts on security, professional development, and whatever else comes to mind.
+paginate: 5
