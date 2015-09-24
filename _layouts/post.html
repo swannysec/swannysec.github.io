@@ -40,23 +40,23 @@ layout: default
 <div id="share-buttons">
 <!-- I got these buttons from simplesharebuttons.com -->
   <!-- Email -->
-      <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
-          <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+      <a href="mailto:?Subject={{ post.title }} - From swannysec&amp;Body=Check%20this%20out!%20 {{ site.url }}{{ page.url }}">
+          <img src="https://swannysec.github.io/public/email.png" alt="Email" />
       </a>
   <!-- Twitter -->
-      <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-          <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+      <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ post.title }}%20from%20swannysec&amp;hashtags=infosec" target="_blank">
+          <img src="https://swannysec.github.io/public/twitter.png" alt="Twitter" />
       </a>
   <!-- LinkedIn -->
-      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
-          <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}" target="_blank">
+          <img src="https://swannysec.github.io/public/linkedin.png" alt="LinkedIn" />
       </a>
   <!-- Reddit -->
-      <a href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-          <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+      <a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{ post.title }} - From swannysec" target="_blank">
+          <img src="https://swannysec.github.io/public/reddit.png" alt="Reddit" />
       </a>
   <!-- Facebook -->
-      <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
-          <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+          <img src="https://swannysec.github.io/public/facebook.png" alt="Facebook" />
       </a>
 </div>
