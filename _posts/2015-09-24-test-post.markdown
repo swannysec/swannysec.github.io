@@ -2,6 +2,7 @@
 published: true
 title: Test Post
 layout: post
+tags: [test]
 ---
 ~~~
 tags: test
