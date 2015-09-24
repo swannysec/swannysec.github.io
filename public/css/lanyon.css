@@ -528,3 +528,6 @@ a.pagination-item:hover {
 .fb-like{
     Display:table-row;
 }
+.copyright-contact{
+    display: inline;
+}
