@@ -35,6 +35,40 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+<hr style="background:#313131; border:0; height:2px" />
+
+<style type="text/css">
+#share-buttons img {
+  width: 40px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;}
+</style>
+<div id="share-buttons">
+<!-- I got these buttons from simplesharebuttons.com -->
+  <!-- Email -->
+      <a href="mailto:?Subject={{ site.title }} - From swannysec&amp;Body=Check%20this%20out!%20 {{ site.url }}{{ page.url }}">
+          <img src="https://swannysec.github.io/public/email.png" alt="Email" />
+      </a>
+  <!-- Twitter -->
+      <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ site.title }}%20from%20swannysec:&amp;hashtags=infosec" target="_blank">
+          <img src="https://swannysec.github.io/public/twitter.png" alt="Twitter" />
+      </a>
+  <!-- LinkedIn -->
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}" target="_blank">
+          <img src="https://swannysec.github.io/public/linkedin.png" alt="LinkedIn" />
+      </a>
+  <!-- Reddit -->
+      <a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{ site.title }} - From swannysec" target="_blank">
+          <img src="https://swannysec.github.io/public/reddit.png" alt="Reddit" />
+      </a>
+  <!-- Facebook -->
+      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+          <img src="https://swannysec.github.io/public/facebook.png" alt="Facebook" />
+      </a>
+</div>
+<br>
 <div class="copyright-contact">
   <p>
     Author: John D. Swanson - Contact me at <a href="mailto:swanson.john.d@gmail.com">swanson.john.d@gmail.com</a><br>
