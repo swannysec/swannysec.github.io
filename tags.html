@@ -1,0 +1,60 @@
+---
+layout: default
+title: Tags
+---
+
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+{% for tag in sortedtags %}
+  <h3 id="{{ tag }}">{{ tag }}</h3>
+  <ul>
+  {% for post in site.tags[tag] %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+
+<hr style="background:#313131; border:0; height:2px" />
+
+<style type="text/css">
+#share-buttons img {
+  width: 40px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;}
+</style>
+<div id="share-buttons">
+<!-- I got these buttons from simplesharebuttons.com -->
+  <!-- Email -->
+      <a href="mailto:?Subject={{ site.title }}&amp;Body=Check%20this%20out!%20 {{ site.url }}{{ page.url }}">
+          <img src="https://swannysec.github.io/public/email.png" alt="Email" />
+      </a>
+  <!-- Twitter -->
+      <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ site.title }}&amp;hashtags=infosec" target="_blank">
+          <img src="https://swannysec.github.io/public/twitter.png" alt="Twitter" />
+      </a>
+  <!-- LinkedIn -->
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}" target="_blank">
+          <img src="https://swannysec.github.io/public/linkedin.png" alt="LinkedIn" />
+      </a>
+  <!-- Reddit -->
+      <a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{ site.title }} - An InfoSec Blog" target="_blank">
+          <img src="https://swannysec.github.io/public/reddit.png" alt="Reddit" />
+      </a>
+  <!-- Facebook -->
+      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+          <img src="https://swannysec.github.io/public/facebook.png" alt="Facebook" />
+      </a>
+</div>
+<br>
+<div class="contact">
+    Author: John D. Swanson - Contact me at <a href="mailto:swanson.john.d@gmail.com">swanson.john.d@gmail.com</a><br>
+    Opinions are my own and do not reflect those of my employer.<br>
+    &copy; {{ site.time | date: '%Y' }}. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://swannysec.github.io/atom.xml"><img src="https://swannysec.github.io/public/feed-icon-14x14.png" alt="Atom Feed" style="width:14px;height:14px;border:0"></a>
+</div>
