@@ -31,7 +31,7 @@ layout: default
 </div>
 <style type="text/css">
 #share-buttons img {
-  width: 30px;
+  width: 35px;
   padding: 5px;
   border: 0;
   box-shadow: 0;
@@ -40,11 +40,11 @@ layout: default
 <div id="share-buttons">
 <!-- I got these buttons from simplesharebuttons.com -->
   <!-- Email -->
-      <a href="mailto:?Subject={{ post.title }} - From swannysec&amp;Body=Check%20this%20out!%20 {{ site.url }}{{ page.url }}">
+      <a href="mailto:?Subject={{ page.title }} - From swannysec&amp;Body=Check%20this%20out!%20 {{ site.url }}{{ page.url }}">
           <img src="https://swannysec.github.io/public/email.png" alt="Email" />
       </a>
   <!-- Twitter -->
-      <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ post.title }}%20from%20swannysec&amp;hashtags=infosec" target="_blank">
+      <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}%20from%20swannysec&amp;hashtags=infosec" target="_blank">
           <img src="https://swannysec.github.io/public/twitter.png" alt="Twitter" />
       </a>
   <!-- LinkedIn -->
@@ -52,7 +52,7 @@ layout: default
           <img src="https://swannysec.github.io/public/linkedin.png" alt="LinkedIn" />
       </a>
   <!-- Reddit -->
-      <a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{ post.title }} - From swannysec" target="_blank">
+      <a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{ page.title }} - From swannysec" target="_blank">
           <img src="https://swannysec.github.io/public/reddit.png" alt="Reddit" />
       </a>
   <!-- Facebook -->
