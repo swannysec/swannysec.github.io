@@ -12,10 +12,48 @@ Fortunately, the days of simple notepads are long behind us.  And while I still 
 
 In part two of this post, I'll be covering my own personal choices for investigative tools and sharing how I set them up.  The remainder of this post, however, contains the goods: a curated list of investigative and analytical tools that I've collected over time.  Some of these are things I use daily and some are simply things on my to-do list to check out, but I think all of these have merit and are worthy of your time and attention to explore.  The list leans toward the free/cheap side of things so there won't be a slew of enterprise-grade products contained therein.  It should also be noted that some of the tools listed likely fall into more than one category depending on the breadth of their feature sets; therefore, I have tried to give them the most logical home according to my own twisted mind.  Finally, individual threat feeds, honeypots, and tools with more specific technical purposes such as deobfuscation or reversing are largely beyond the scope of this list.  Enjoy.
 
-**Swanny's Big List of Security Analysis Tools**
+## Swanny's Big List of Security Analysis Tools
+
+**Journaling/Incident Tracking/Note-taking**
 
 | Name | Description |
 |:--------------:|:-----------------:|
+| [FIR](https://github.com/certsocietegenerale/FIR) | Fast Incident Response.  Lightweight IR management platform.  Will track and correlate manually entered IOCs. |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
 | [I'm an inline-style link](https://www.google.com) | right-aligned |
-| col 2 is | centered |
-| zebra stripes | are neat |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
+| [I'm an inline-style link](https://www.google.com) | right-aligned |
+| [I'm an inline-style link](https://www.google.com) | centered |
+| [I'm an inline-style link](https://www.google.com) | are neat |
