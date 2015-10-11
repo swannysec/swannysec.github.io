@@ -19,7 +19,7 @@ The list leans toward the free/cheap side of things so there won't be a slew of 
 **Journaling/Incident Tracking/Note-taking**
 
 | Name | Description |
-|:--------------:|:-----------------:|
+|:--------------|:-----------------|
 | [FIR](https://github.com/certsocietegenerale/FIR) | Fast Incident Response.  Lightweight IR management platform.  Will track and correlate manually entered IOCs. |
 | [SCOT](https://github.com/sandialabs/scot) | Sandia Cyber Omni Tracker.  IR management platform with robust IOC tracking/correlation and plugins for integration with other tools. |
 | [RTIR](https://github.com/bestpractical/rtir) | Request Tracker for Incident Response.  Just what it sounds like.  RT with built in workflows for IR. |
@@ -32,7 +32,7 @@ The list leans toward the free/cheap side of things so there won't be a slew of 
 **Threat Intelligence/IoC Aggregation and Processing**
 
 
-|:--------------:|:-----------------:|
+|:--------------|:-----------------|
 | [CIF](http://csirtgadgets.org/collective-intelligence-framework) | Collective Intelligence Framework.  Collects, aggregates, normalizes, and outputs IoCs in a variety of formats for operationalization.  Can search via API/browser extensions as well.  Self-hosted.  |
 | [IntelMQ](https://github.com/certtools/intelmq) | Collects and processes large volumes of threat intelligence from traditional feeds, pastebin, twitter, and more.  Self-hosted. |
 | [CriticalStack](https://intel.criticalstack.com/) | Collects and aggregates threat intelligence and outputs to Bro signature files.  Get creative and shape the output to your needs or wait for more output formats. |
@@ -40,28 +40,51 @@ The list leans toward the free/cheap side of things so there won't be a slew of 
 | [ThreatConnect](http://www.threatconnect.com/) | Full threat intel platform.  Enterprise-grade with a nice free feature set ideal for tracking and sharing IoCs individually or in a small team. |
 | [MISP](https://github.com/MISP/MISP) | Malware Information Sharing Platform.  Great IoC management platform.  Allows a variety of inputs and outputs and has a robust sharing framework. |
 | [CRITS](https://crits.github.io/) | Collaborative Research Into Threats.  Similar concept to MISP, with a bigger focus on analysis. |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
+
+
+**Web-based Research Tools**
+
+
+|:--------------|:-----------------|
+| [PassiveTotal](https://www.passivetotal.org/) | Excellent source of context for malware or IoC analysis.  Whois lookups, passive DNS, SSL cert history, and tie ins with VirusTotal, Domaintools, Alienvault and more.  Good free feature set.   |
+| [ThreatCrowd](https://www.threatcrowd.org/) | Great search engine for IoCs complete with visualizations and RSS feeds. Free. |
+| [threatRecon](https://threatrecon.co/) | Nice IoC lookup from Wapack Labs.  Free after registration for 1000 searches a month. |
+| [malwr](https://malwr.com/) | Online cuckoo malware sandbox analysis.  Free. |
+| [VirusTotal](https://www.virustotal.com/) | Does this need a description?  Analysis of files and URLs against known malware signatures and reputation data. |
+| [urlQuery](https://urlquery.net/) | URL lookup, provides whois and reputational data as well as running the page load through Snort and Suricata with advanced subscriptions.  |
+
+
+**Reconnaissance/Context Enrichment**
+
+
+|:--------------|:-----------------|
+| [Automater](https://github.com/1aN0rmus/TekDefense-Automater) | Given a domain or IP, gathers a boatload of useful intel from various web sources.  Lightweight Python script. |
+| [Machinae](https://github.com/HurricaneLabs/machinae) | Similar to Automater with more sources of intel, cleaner config, and additional inputs/outputs. |
+| [dnstwist](https://github.com/elceef/dnstwist) | Feed it a domain and it will spit out any existing domains that are similar.  Useful when looking for fraud, phishing, or typosquatting. |
+| [FOCA](http://blog.elevenpaths.com/2013/12/foca-final-version-ultimate-foca.html) | Windows based recon tool for exploring/mapping domains and finding files, injection opportunities, or other security issues.  Free. |
+
+
+**Log Analysis/SIEM**
+
+
+|:--------------|:-----------------|
+| [Splunk](https://www.splunk.com/) | Fantastic log analysis tool\SIEM with loads of integrations and flexibility.  Allows for a ton of free-form analysis.  Free to 500 MB/day indexing. |
+| [ELK Stack](https://www.elastic.co/products) | Elasticsearch, Logstash, Kibana.  Open source log collector with great visualization via Kibana. |
+| [graylog](https://www.graylog.org/) | Slightly easier to setup and use than ELK, has a growing featureset in visualization and plugins.  |
+
+
+**Visualization/Relationship Research**
+
+
+|:--------------|:-----------------|
+| [Maltego](https://www.paterva.com/web6/products/maltego.php) | Industry standard for this type of work.  Expensive, but decent free feature-set for getting started. |
+| [Orange](http://orange.biolab.si/) | Open-source visualization and data analysis. |
+
+
+**Bonus Items - Random Stuff I Like**
+
+
+|:--------------|:-----------------|
+| [Dashkiosk](https://github.com/vincentbernat/dashkiosk) | Awesome rotating dashboard creator for static displays.  Great for a NOC/SOC.  Chromecast friendly!  |
+| [Loki](https://github.com/Neo23x0/Loki) | Scans hosts for presence of a variety of IoCs. |
+| [Gavel](https://github.com/brianwarehime/gavel) | Nifty transforms for Maltego that allow an analyst to query traffic records, a lot of human intel possible here. |
