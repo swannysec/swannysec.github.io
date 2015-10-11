@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Building an Analysis Toolkit Pt. 1
 layout: post
 tags: [Tools, Analysis]
