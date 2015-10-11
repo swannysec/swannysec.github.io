@@ -33,13 +33,13 @@ The list leans toward the free/cheap side of things so there won't be a slew of 
 
 
 |:--------------:|:-----------------:|
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
-| [I'm an inline-style link](https://www.google.com) | are neat |
-| [I'm an inline-style link](https://www.google.com) | right-aligned |
-| [I'm an inline-style link](https://www.google.com) | centered |
+| [CIF](http://csirtgadgets.org/collective-intelligence-framework) | Collective Intelligence Framework.  Collects, aggregates, normalizes, and outputs IoCs in a variety of formats for operationalization.  Can search via API/browser extensions as well.  Self-hosted.  |
+| [IntelMQ](https://github.com/certtools/intelmq) | Collects and processes large volumes of threat intelligence from traditional feeds, pastebin, twitter, and more.  Self-hosted. |
+| [CriticalStack](https://intel.criticalstack.com/) | Collects and aggregates threat intelligence and outputs to Bro signature files.  Get creative and shape the output to your needs or wait for more output formats. |
+| [AlienVault OTX](https://www.alienvault.com/open-threat-exchange) | Open Threat Exchange.  Free web-based threat intel collector/aggregator.  Big focus on information sharing. |
+| [ThreatConnect](http://www.threatconnect.com/) | Full threat intel platform.  Enterprise-grade with a nice free feature set ideal for tracking and sharing IoCs individually or in a small team. |
+| [MISP](https://github.com/MISP/MISP) | Malware Information Sharing Platform.  Great IoC management platform.  Allows a variety of inputs and outputs and has a robust sharing framework. |
+| [CRITS](https://crits.github.io/) | Collaborative Research Into Threats.  Similar concept to MISP, with a bigger focus on analysis. |
 | [I'm an inline-style link](https://www.google.com) | are neat |
 | [I'm an inline-style link](https://www.google.com) | right-aligned |
 | [I'm an inline-style link](https://www.google.com) | centered |
