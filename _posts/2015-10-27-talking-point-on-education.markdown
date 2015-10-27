@@ -11,4 +11,8 @@ Earlier this week on Twitter, Christian P. ([@CYINT_dude](https://twitter.com/CY
 
 
 
-More specifically, the conversation was about International Relations as a field of study for someone working in security.  Whilst this may seem like an odd pairing to many, we all expressed 
+
+
+
+
+More specifically, the conversation was about International Relations as a field of study for someone working in security.  Whilst this may seem like an odd pairing to many, we all expressed
