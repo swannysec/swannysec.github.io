@@ -2,7 +2,7 @@
 published: true
 title: Talking Point: On Education - Pt. 1
 layout: post
-tags: [Talking_Point, Education, Professional_Development]
+tags: [TalkingPoint, Education, ProfessionalDevelopment]
 ---
 *Note: This post is the first of a series of non-technical topics relevant to information security and other aspects of technology at large.*
 
