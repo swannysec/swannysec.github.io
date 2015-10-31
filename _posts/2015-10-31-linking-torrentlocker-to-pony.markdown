@@ -1,6 +1,6 @@
 ---
 published: false
-title: Linking TorrentLocker to Pony
+title: Linking TorrentLocker to Pony - Pt. 1
 layout: post
 tags: [Analysis, TorrentLocker, Pony]
 ---
@@ -180,7 +180,7 @@ Investigating the malware brings about something substantially more [nefarious](
 
 ![](https://swannysec.github.io/public/slenderness/firstponylink.jpg)
 
-It looks like we finally have our first link to something more than ransomware.  If we assume the commenter (a regular commenter on VT https://www.virustotal.com/en/user/kingxyz/ ) is correct, we've clearly left pure TorrentLocker network.  On top of that, it's dropped by [Pony/Fareit](https://www.virustotal.com/en/file/90857805c139b3acea91fe38a49db3a50281d2f9e6f1f3af63770736225f44be/analysis/).  Let's expand that potential bot:
+It looks like we finally have our first link to something more than ransomware.  If we assume the [commenter](https://www.virustotal.com/en/user/kingxyz/ ) is correct, we've clearly left pure TorrentLocker network.  On top of that, it's dropped by [Pony/Fareit](https://www.virustotal.com/en/file/90857805c139b3acea91fe38a49db3a50281d2f9e6f1f3af63770736225f44be/analysis/).  Let's expand that potential bot:
 
 ![](https://swannysec.github.io/public/slenderness/betabot.jpg)
 
