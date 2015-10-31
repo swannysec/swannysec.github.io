@@ -164,7 +164,7 @@ From here, I expanded the malware hashes and checked for other communication.  F
 
 Let's do a whois via Maltego and expand 194.1.156.96.  At this point, I have to apologize because the relationships start to become so tangled that it's difficult to work in Maltego and display things in a way that's organized:
 
-![](https://swannysec.github.io/public/slenderness/leavingransomeware.jpg)
+![](https://swannysec.github.io/public/slenderness/leavingransomware.jpg)
 
 So, now we have three more domains and a new actor, Alexey Morozov (I omitted the listed phone number).  In addition, the IP is not owned by Sergey Yashin as I had expected.  How strange!  Alexey is a malware author, as seen [here](https://www.virustotal.com/en/file/28a07f8c8deaf19268b21cd1af381e91c5028dbc547c49c1037957b1cd469f67/analysis/) on the file detail tab.  It's also possible he's really an attempt at registering as another hockey [player](https://en.wikipedia.org/wiki/Alexei_Morozov).  Sad to see retired hockey players need to supplement their income in this manner (obviously, again, these are likely aliases).
 
