@@ -115,11 +115,13 @@ Expanding and enriching the two new domains lunoxdyv.com and towovker.com brings
 What do we have here?  More malware and our first actor, that's exciting!  We'll leave Mr. Malkovich alone for a bit and check on the malware.  More ransomware according to VirusTotal:
 
 [0e66f3725446fb6502e91830582452de](https://www.virustotal.com/en/file/3d48318c27d12ee7d3a4699bfac3c3ac42acc18d511862c7ab94e04810c9c21e/analysis/)
+
 [e242fdb77bb2d75bfc29c086ddd4985e](https://www.virustotal.com/en/file/0e68f675c2c2e183ff872b4090ddf73fc45adc5191ae21b60e360a492a7ba4e0/analysis/)
 
 The third file is a zip with the goods inside:
 
 [c8f5cd83c585dee882dc531a29b14e85](https://www.virustotal.com/en/file/5154a59c4626790a7a3fe7221f1bca34d829e3c2d9a1e786f80589e106bdcac4/analysis/)
+
 [78cc33f7f5be12aa7871dd854de1741b](https://www.virustotal.com/en/file/cc6c121899a682d838b93889a4fa4d6c7a7b1523e1cc834dfea287aff2ef08bd/analysis/1445406210/)
 
 Before expanding things any further, here's a look at an overview of what we have discovered so far.  It's reaching a point that it is difficult to take readable screenshots, especially if I use the hierarchical views.  It would appear that these may be two slightly different malware networks sharing a common piece of infrastructure: 93.171.159.109.  Unsurprisingly, that IP is on the SSL Blacklist for being a TorrentLocker C&C host.  There's a nice write-up on TorrentLocker from [@marc_etienne_](https://twitter.com/marc_etienne_) at ESET [here](http://www.welivesecurity.com/wp-content/uploads/2014/12/torrent_locker.pdf).
@@ -137,9 +139,13 @@ We're not in Kansas anymore, Toto!  That makes two new domains.  Expanding those
 What kind of malware is Mr. Malkovich serving up at motohex.net and hexdroid.net?  More ransomware?  Looks like it.
 
 [09e54636eb4de5e782cc19a9b7dcf267](https://www.virustotal.com/en/file/68971172e5d1cf5d82776280f67218ba0cf233731e583dfde342afa7ee25ccdd/analysis/)
+
 [98ac006fdb0880711509a51ab4901eec](https://www.virustotal.com/en/file/18440e1faa8186e153e8fe175cdc1c971dceec20e38d92fc8fdbfe9bc7f310e5/analysis/)
+
 [ebacb76eb45d6800da6f4f074ae24e61](https://www.virustotal.com/en/file/1b7e194848522c4bee4a870ef4f74c5b8cec030cb3f61ce60f55db8d67f14fb8/analysis/)
+
 [e9923215f43335260ad445ebf9375035](https://malwr.com/analysis/YmQ3ZmIyYTE1MGYyNGMzNDkxZDJiYmJlMGJkODg0YmY/)
+
 [2e902e458d88cea396a9cf73068db07d](https://www.virustotal.com/en/file/b230f30fd26be4a879d8bdf4504ecf3e374c25ac2bd2880b1342a35284a80d8d/analysis/)
 
 Sure enough, it's [TorrentLocker](https://sslbl.abuse.ch/intel/3df43035b3d1c665d55a334e41c5bcd3a6a5fc67/) again!  Taking a look in threat_note for the whois records of these domains brings something very interesting:
