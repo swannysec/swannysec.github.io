@@ -176,7 +176,7 @@ At this point, we're still in a network that appears to be dedicated to the dist
 
 ![](https://swannysec.github.io/public/slenderness/madfortmalware.jpg)
 
-Investigating the malware brings about substantially more [nefarious](https://www.virustotal.com/en/file/b1378cc0168beefd7b7891cbd58d5282e9d33fd6c159464d6f728d46797ba76a/analysis/) than TorrentLocker.
+Investigating the malware brings about something substantially more [nefarious](https://www.virustotal.com/en/file/b1378cc0168beefd7b7891cbd58d5282e9d33fd6c159464d6f728d46797ba76a/analysis/) than TorrentLocker.
 
 ![](https://swannysec.github.io/public/slenderness/firstponylink.jpg)
 
