@@ -4,7 +4,6 @@ title: Linking TorrentLocker to Pony
 layout: post
 tags: [Analysis, TorrentLocker, Pony]
 ---
-
 *If you're just here for the IOCs, you will find a link to them at the bottom of the post.*
 
 ![](https://swannysec.github.io/public/slenderness/suspiciousdns.jpg)
@@ -50,9 +49,9 @@ A substantial network of subdomains is present, all linked back to a single IP. 
 
 ![](https://swannysec.github.io/public/slenderness/firstmalwr.jpg)
 
-![](https://swannysec.github.io/public/slenderness/hashonebehaviors.jpg)
+![](https://swannysec.github.io/public/slenderness/HashOneBehaviors.jpg)
 
-![](https://swannysec.github.io/public/slenderness/slenderness.jpg)
+![](https://swannysec.github.io/public/slenderness/Slenderness.jpg)
 
 Definitely has some unwanted behavior associated.  And what is Slenderness?  Whatever it is, I stole it as a campaign name for threat_note.  Let's look at [VirusTotal](https://www.virustotal.com/en/file/e1c46cd1b9f9b7e4456ab327c299d41cba30e75cb2f819334e5e6fb65dd5743b/analysis/), what is this thing?  Looks like a fairly standard Crypto-variant ransomware, though some vendors appear to be classifying at a Zeus variant or the Androm Backdoor.  A google search of the IP hosting it, 51.254.140.74 brings us to abuse.ch's [SSL Blacklist](https://sslbl.abuse.ch/intel/cc1c9fc84201246c7150de88f65a0d6f14cc2a78).  Ah, it's TorrentLocker; that will surely ruin someone's day!
 
