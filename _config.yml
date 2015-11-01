@@ -1,8 +1,10 @@
 excerpt_separator: ""
 pygments: true
 markdown: kramdown
-url: http://swannysec.github.io
 title: swannysec
 tagline: Musings on InfoSec
 description: Documenting my thoughts on security, professional development, and whatever else comes to mind.
 paginate: 5
+url: https://swannysec.net
+enforce_ssl: www.swannysec.net 
+
