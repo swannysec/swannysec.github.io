@@ -21,7 +21,7 @@ I need to begin with a few caveats:
 With that said, let's get started!
 
 My first step was to enter the subdomain into [threat_note](https://github.com/defpoint/threat_note), a handy research and indicator tracking notebook from [@brian_warehime](https://twitter.com/brian_warehime).  Threat_note will pull back whois data, passive DNS where possible, and a nice [ThreatCrowd](https://www.threatcrowd.org/) visualization with a quick link to pivot into ThreatCrowd.
-
+  
 
 ![](https://swannysec.net/public/slenderness/firstindicator.jpg)
 
