@@ -16,7 +16,7 @@ So, other than a security professional, who am I?  First and foremost, I'm the f
 
 What's on tap?  Much like Sir Bedevere, "I have a plan!"
 
-![Bedevere](https://swannysec.github.io/public/holygrail.png)
+![Bedevere](//swannysec.net/public/holygrail.png)
 
 Thankfully, my plan does not involve the misuse of Trojan rabbits.  This blog will likely discuss professional development and my own journey from time to time, but the focus will be on the technical aspects of that work.  I hope to share my experience as both a personal archive of the work and so that others may potentially benefit from the information.  I have decided to focus my efforts on incident response, malware/intrusion analysis, and the curation and operationalization of threat intelligence.  These are things I work on from time to time professionally, but despite the fact that I enjoy them immensely, they are not the focus of my job.  I believe these areas are extremely valuable to any mature information security effort and I'd like to expand my horizons with regard to these specialties.
 
