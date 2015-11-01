@@ -6,7 +6,7 @@ tags: [Analysis, TorrentLocker, Pony]
 ---
 *If you're just here for the IOCs, you will find a link to them at the bottom of the post.*
 
-![](//swannysec.net/public/slenderness/suspiciousdns.jpg)
+![](https://swannysec.net/public/slenderness/suspiciousdns.jpg)
 
 It all started with a routine glance at some log data.  I noticed a significant uptick in suspicious DNS queries for the subdomain above; thousands were dropped by our security gear over the course of six hours or so.  Unfortunately, I have been unable to determine the vector for these because we don't have full PCAP abilities under normal circumstances.  Nevertheless, I was interested in what this subdomain might have been serving up.   What I found initially was not terribly surprising.  What I found when I continued investigating, however, was a huge surprise.  This post will demonstrate how free and open-source intelligence and analysis tools can reveal complex relationships and uncover shared malware infrastructure.
 
@@ -23,51 +23,51 @@ With that said, let's get started!
 My first step was to enter the subdomain into [threat_note](https://github.com/defpoint/threat_note), a handy research and indicator tracking notebook from [@brian_warehime](https://twitter.com/brian_warehime).  Threat_note will pull back whois data, passive DNS where possible, and a nice [ThreatCrowd](https://www.threatcrowd.org/) visualization with a quick link to pivot into ThreatCrowd.
 
 
-![](//swannysec.net/public/slenderness/firstindicator.jpg)
+![](https://swannysec.net/public/slenderness/firstindicator.jpg)
 
-![](//swannysec.net/public/slenderness/firstwhois.jpg)
+![](https://swannysec.net/public/slenderness/firstwhois.jpg)
 
-![](//swannysec.net/public/slenderness/firstviz.jpg)
+![](https://swannysec.net/public/slenderness/firstviz.jpg)
 
 
 Not much to see here unfortunately.  Just a subdomain behind a private registrar.  Let's go up a level and look at that root domain.  I dropped it into threat_note as well:
 
 
-![](//swannysec.net/public/slenderness/rootwhois.jpg)
+![](https://swannysec.net/public/slenderness/rootwhois.jpg)
 
 
 Still not much new here, but as with the original subdomain, there is some unusual data present.  A Russian registrar located in Nobby Beach, Queensland, Australia?  Certainly bizarre, my interest is now piqued.  Let's scroll down a little further and take a look at the ThreatCrowd visualization.
 
 
-![](//swannysec.net/public/slenderness/rootviz.jpg)
+![](https://swannysec.net/public/slenderness/rootviz.jpg)
 
 
 Now we're cooking!  There are malware hashes, a nice network of subdomains, and an IP all associated with
 poytowweryt.com.  In order to understand what we're looking at, understand that ThreatCrowd pulls data from a variety of public intel and analysis sources such as [VirusTotal](https://www.virustotal.com), [malwr](https://malwr.com/), and [Payload Security](https://www.hybrid-analysis.com/) and correlates it with its own history of DNS and whois data.  Data ingested includes domains/subdomains, IPs, malware hashes, and whois information.  Let's hop into [ThreatCrowd](https://www.threatcrowd.org/domain.php?domain=poytowweryt.com) via the handy pivot link provided.
 
 
-![](//swannysec.net/public/slenderness/firstthreatcrowd.jpg)
+![](https://swannysec.net/public/slenderness/firstthreatcrowd.jpg)
 
-![](//swannysec.net/public/slenderness/firstsubdomains.jpg)
+![](https://swannysec.net/public/slenderness/firstsubdomains.jpg)
 
 
 A substantial network of subdomains is present, all linked back to a single IP.  How about the malware?
 
 
-![](//swannysec.net/public/slenderness/firstmalware.jpg)
+![](https://swannysec.net/public/slenderness/firstmalware.jpg)
 
-![](//swannysec.net/public/slenderness/firstmalwr.jpg)
+![](https://swannysec.net/public/slenderness/firstmalwr.jpg)
 
-![](//swannysec.net/public/slenderness/HashOneBehaviors.jpg)
+![](https://swannysec.net/public/slenderness/HashOneBehaviors.jpg)
 
-![](//swannysec.net/public/slenderness/Slenderness.jpg)
+![](https://swannysec.net/public/slenderness/Slenderness.jpg)
 
 
 Definitely has some unwanted behavior associated.  And what is Slenderness?  Whatever it is, I stole it as a campaign name for threat_note.  Let's look at [VirusTotal](https://www.virustotal.com/en/file/e1c46cd1b9f9b7e4456ab327c299d41cba30e75cb2f819334e5e6fb65dd5743b/analysis/), what is this thing?  Looks like a fairly standard Crypto-variant ransomware, though some vendors appear to be classifying at a Zeus variant or the Androm Backdoor.  A google search of the IP hosting it, 51.254.140.74 brings us to abuse.ch's [SSL Blacklist](https://sslbl.abuse.ch/intel/cc1c9fc84201246c7150de88f65a0d6f14cc2a78).  Ah, it's TorrentLocker; that will surely ruin someone's day!
 
 
-![](//swannysec.net/public/slenderness/firstvt1.jpg)
-![](//swannysec.net/public/slenderness/firstvt2.jpg)
+![](https://swannysec.net/public/slenderness/firstvt1.jpg)
+![](https://swannysec.net/public/slenderness/firstvt2.jpg)
 
 
 So what do we have so far?  Looks like a small distribution network for ransomware.  That's a pretty common thing these days, likely a dime a dozen if you're really looking.  Let's hop over to [Maltego](https://www.paterva.com/web6/products/maltego.php) and explore a little more using [ThreatCrowd](http://threatcrowd.blogspot.co.uk/p/threatcrowd-maltego-transform.html) and [PassiveTotal](http://blog.passivetotal.org/passivetotal-maltego-transforms/) transforms.
@@ -75,75 +75,75 @@ So what do we have so far?  Looks like a small distribution network for ransomwa
 This is the first domain expanded via the ThreatCrowd transform.  As noted above, I do not have access to the full version of Maltego, so all the subdomains are not present.
 
 
-![](//swannysec.net/public/slenderness/Maltego1.jpg)
+![](https://swannysec.net/public/slenderness/Maltego1.jpg)
 
 
 The next step is to enrich the IP using the ThreatCrowd transforms.  These transforms basically extend all the search and correlation power of ThreatCrowd right into Maltego.
 
 
-![](//swannysec.net/public/slenderness/Maltego2.jpg)
+![](https://swannysec.net/public/slenderness/Maltego2.jpg)
 
 
 Here we can see the IP hosts the second piece of malware from the main domain as well as a bunch of the subdomains that represent it.  At this point, I want to be sure I've got the full history of the IP, so I elect to transform via PassiveTotal and pull back their entire passive DNS history (sadly I cannot do this for all of the IPs during the investigation due to limitations of the free account).
 
 
-![](//swannysec.net/public/slenderness/Maltego3.jpg)
+![](https://swannysec.net/public/slenderness/Maltego3.jpg)
 
 
 The result is a new domain not picked up by ThreatCrowd, highlighted below! The PassiveTotal [results](https://www.passivetotal.org/passive/51.254.140.74) are available below as well.
 
 
-![](//swannysec.net/public/slenderness/Maltego4.jpg)
+![](https://swannysec.net/public/slenderness/Maltego4.jpg)
 
- ![](//swannysec.net/public/slenderness/PassiveTotal1.jpg)
+ ![](https://swannysec.net/public/slenderness/PassiveTotal1.jpg)
 
 
 Now we've got a new lead.  Enriching itroxitutr.net gives us a new IP and we can see it's hidden behind the same suspicious registrar as before, based on the contact e-mail present.
 
 
-![](//swannysec.net/public/slenderness/Maltego5.jpg)
+![](https://swannysec.net/public/slenderness/Maltego5.jpg)
 
 
 Expanding the discovered IP leads us to new malware and two new domains.
 
 
-![](//swannysec.net/public/slenderness/Maltego6.jpg)
+![](https://swannysec.net/public/slenderness/Maltego6.jpg)
 
 
 At this stage, I went back to threat_note for some whois data (it can be produced in Maltego too).  Recognize what's circled?  It's that same shady domain registrar.  Aside from the direct DNS associations, there's a very obvious theme present in that all of the domains are registered behind an unusual private registrar.
 
 
-![](//swannysec.net/public/slenderness/itroxwhois.jpg)
+![](https://swannysec.net/public/slenderness/itroxwhois.jpg)
 
 
 The IP itself, however, gives our second clue in terms of Geolocation (the first being the TLD of the registrar).  It's hosted in Ukraine.  That won't shock anyone in our line of work, but it certainly raises the probability of nefarious intent given the other indications present here.  See below.
 
 
-![](//swannysec.net/public/slenderness/itroxipwhois.jpg)
+![](https://swannysec.net/public/slenderness/itroxipwhois.jpg)
 
 
 What can we learn about the malware related to itroxtutr.net?
 
 
-![](//swannysec.net/public/slenderness/itroxmalwr1.jpg)
+![](https://swannysec.net/public/slenderness/itroxmalwr1.jpg)
 
-![](//swannysec.net/public/slenderness/itroxmalwr2.jpg)
+![](https://swannysec.net/public/slenderness/itroxmalwr2.jpg)
 
-![](//swannysec.net/public/slenderness/itroxvt1.jpg)
+![](https://swannysec.net/public/slenderness/itroxvt1.jpg)
 
-![](//swannysec.net/public/slenderness/itroxvt2.jpg)
+![](https://swannysec.net/public/slenderness/itroxvt2.jpg)
 
 
 Looks like more crypto-variant ransomware, very similar to what was hosted by the original domain, quite likely TorrentLocker again.  At this stage, we've discovered two separate IPs fronted by a good number of domains and subdomains all serving ransomware.  Still nothing out of the ordinary present here, but this is a great exercise nonetheless.
 
 
-![](//swannysec.net/public/slenderness/maltegopostitrox.jpg)
+![](https://swannysec.net/public/slenderness/maltegopostitrox.jpg)
 
 
 Expanding and enriching the two new domains lunoxdyv.com and towovker.com brings the following results:
 
 
-![](//swannysec.net/public/slenderness/Maltego7.jpg)
+![](https://swannysec.net/public/slenderness/Maltego7.jpg)
 
 
 What do we have here?  More malware and our first actor, that's exciting!  We'll leave Mr. Malkovich alone for a bit and check on the malware.  More ransomware according to VirusTotal:
@@ -161,19 +161,19 @@ The third file is a zip with the goods inside:
 Before expanding things any further, here's a look at an overview of what we have discovered so far.  It's reaching a point that it is difficult to take readable screenshots, especially if I use the hierarchical views.  It would appear that these may be two slightly different malware networks sharing a common piece of infrastructure: 93.171.159.109.  Unsurprisingly, that IP is on the SSL Blacklist for being a TorrentLocker C&C host.  There's a nice write-up on TorrentLocker from [@marc_etienne_](https://twitter.com/marc_etienne_) at ESET [here](http://www.welivesecurity.com/wp-content/uploads/2014/12/torrent_locker.pdf).
 
 
-![](//swannysec.net/public/slenderness/Maltego10.jpg)
+![](https://swannysec.net/public/slenderness/Maltego10.jpg)
 
 
 We want to continue following the breadcrumbs, so let's go back to Mr. Malkovich.  What can we find out by pivoting off his address via ThreatCrowd?
 
 
-![](//swannysec.net/public/slenderness/Maltego8.jpg)
+![](https://swannysec.net/public/slenderness/Maltego8.jpg)
 
 
 We're not in Kansas anymore, Toto!  That makes two new domains.  Expanding those domains reveals yet more malware and a shared host, 191.1.156.96.
 
 
-![](//swannysec.net/public/slenderness/Maltego9.jpg)
+![](https://swannysec.net/public/slenderness/Maltego9.jpg)
 
 
 What kind of malware is Mr. Malkovich serving up at motohex.net and hexdroid.net?  More ransomware?  Looks like it.
@@ -191,27 +191,27 @@ What kind of malware is Mr. Malkovich serving up at motohex.net and hexdroid.net
 Sure enough, it's [TorrentLocker](https://sslbl.abuse.ch/intel/3df43035b3d1c665d55a334e41c5bcd3a6a5fc67/) again!  Taking a look in threat_note for the whois records of these domains brings something very interesting:
 
 
-![](//swannysec.net/public/slenderness/motorhexwhois.jpg)
+![](https://swannysec.net/public/slenderness/motorhexwhois.jpg)
 
-![](//swannysec.net/public/slenderness/hexdroidwhois.jpg)
+![](https://swannysec.net/public/slenderness/hexdroidwhois.jpg)
 
 
 A name to go with that e-mail!  Sergey Yashin, perhaps a play on a retired ice hockey [player](https://en.wikipedia.org/wiki/Sergei_Yashin).  Though a likely alias, let's pull the whois in Maltego and draw a link between Sergey and his e-mail.  I'll revisit Sergey in another post.
 
 
-![](//swannysec.net/public/slenderness/Yashin1.jpg)
+![](https://swannysec.net/public/slenderness/Yashin1.jpg)
 
 
 From here, I expanded the malware hashes and checked for other communication.  False positives have been removed, such as communication to Windows Update.  Looks like everything communicates with 194.1.156.96:
 
 
-![](//swannysec.net/public/slenderness/motornet.jpg)
+![](https://swannysec.net/public/slenderness/motornet.jpg)
 
 
 Let's do a whois via Maltego and expand 194.1.156.96.  At this point, I have to apologize because the relationships start to become so tangled that it's difficult to work in Maltego and display things in a way that's organized:
 
 
-![](//swannysec.net/public/slenderness/leavingransomware.jpg)
+![](https://swannysec.net/public/slenderness/leavingransomware.jpg)
 
 
 So, now we have three more domains and a new actor, Alexey Morozov (I omitted the listed phone number).  In addition, the IP is not owned by Sergey Yashin as I had expected.  How strange!  Alexey is a malware author, as seen [here](https://www.virustotal.com/en/file/28a07f8c8deaf19268b21cd1af381e91c5028dbc547c49c1037957b1cd469f67/analysis/) on the file detail tab.  It's also possible he's really an attempt at registering as another hockey [player](https://en.wikipedia.org/wiki/Alexei_Morozov).  Sad to see retired hockey players need to supplement their income in this manner (obviously, again, these are likely aliases).
@@ -219,45 +219,45 @@ So, now we have three more domains and a new actor, Alexey Morozov (I omitted th
 Once we expand wsevgocis.com and hosiroxair.net, we find a familiar sight, the same anomalous private registrar from our earliest findings:
 
 
-![](//swannysec.net/public/slenderness/194expanded.jpg)
+![](https://swannysec.net/public/slenderness/194expanded.jpg)
 
 
 At this point, we're still in a network that appears to be dedicated to the distribution of ransomware, primarily, if not entirely TorrentLocker.  That's about to change.  Let's expand madfortgoes.ru.  Just one link, to a piece of malware, and no useful whois information.  Is this a dead end?
 
 
-![](//swannysec.net/public/slenderness/madfortmalware.jpg)
+![](https://swannysec.net/public/slenderness/madfortmalware.jpg)
 
 
 Investigating the malware brings about something substantially more [nefarious](https://www.virustotal.com/en/file/b1378cc0168beefd7b7891cbd58d5282e9d33fd6c159464d6f728d46797ba76a/analysis/) than TorrentLocker.
 
 
-![](//swannysec.net/public/slenderness/firstponylink.jpg)
+![](https://swannysec.net/public/slenderness/firstponylink.jpg)
 
 
 It looks like we finally have our first link to something more than ransomware.  If we assume the [commenter](https://www.virustotal.com/en/user/kingxyz/ ) is correct, we've clearly left pure TorrentLocker network.  On top of that, it's dropped by [Pony/Fareit](https://www.virustotal.com/en/file/90857805c139b3acea91fe38a49db3a50281d2f9e6f1f3af63770736225f44be/analysis/).  Let's expand that potential bot:
 
 
-![](//swannysec.net/public/slenderness/betabot.jpg)
+![](https://swannysec.net/public/slenderness/betabot.jpg)
 
 
 There's a lot to process here.  I begin by expanding the IPs first (I left the whois details out as they do not appear to be relevant):
 
 
-![](//swannysec.net/public/slenderness/betaexpandips.jpg)
+![](https://swannysec.net/public/slenderness/betaexpandips.jpg)
 
 
 The IP's don't reveal any complex relationships so I began digging through the domains.  Rearmheadfire.com is the only domain with  whois data and additional links outside this network, as seen below:
 
 
-![](//swannysec.net/public/slenderness/betabotexpandeddomains.jpg)
+![](https://swannysec.net/public/slenderness/betabotexpandeddomains.jpg)
 
 
 At last, this is where we hit our first undeniable links to the Pony botnet after the mention from the VT comment above.  [Damballa](https://www.damballa.com/) has a fantastic write-up available [here](https://www.damballa.com/wp-content/uploads/2015/08/Damballa_PonyUp.pdf).  Contained within is the following:
 
 
-![](//swannysec.net/public/slenderness/damballavaleryy.jpg)
+![](https://swannysec.net/public/slenderness/damballavaleryy.jpg)
 
-![](//swannysec.net/public/slenderness/damballaponyip.jpg)
+![](https://swannysec.net/public/slenderness/damballaponyip.jpg)
 
 
 Well, hello!  Looks like a clear link indeed from our rinky-dink TorrentLocker network to the Pony botnet!
@@ -265,15 +265,15 @@ Well, hello!  Looks like a clear link indeed from our rinky-dink TorrentLocker n
 Here's what the final view looks like in two different formats:
 
 
-![](//swannysec.net/public/slenderness/finaloverview.jpg)
+![](https://swannysec.net/public/slenderness/finaloverview.jpg)
 
-![](//swannysec.net/public/slenderness/finaloverview1.jpg)
+![](https://swannysec.net/public/slenderness/finaloverview1.jpg)
 
 
 This is by no means the end of this network, but this post is long enough.  I am continuing to investigate and my current view looks something like this:
 
 
-![](//swannysec.net/public/slenderness/continuingwork.jpg)
+![](https://swannysec.net/public/slenderness/continuingwork.jpg)
 
 
 What conclusions can we draw from this analysis?  First and perhaps foremost, open source and free tools can be tremendously powerful.  Beyond my own hardware, I didn't pay a dime for any of this data or the tools to analyze it.  The result is pretty interesting; I managed to uncover, in the span of an evening, a link from an operating TorrentLocker distribution network to the Pony botnet.  Second, this analysis reveals that malware infrastructure sharing and reuse is likely prevalent among Eastern European cybercriminal groups.  As I continue to analyze this case, I'm curious to see if there will be links to additional malware distribution networks.  Finally, and perhaps unsurprisingly, these cybercriminals are making heavy use of private registrars and false whois data to shield both themselves and their infrastructure.
