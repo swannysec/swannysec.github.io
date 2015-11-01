@@ -12,7 +12,7 @@ Earlier this week on Twitter, Christian P. ([@CYINT_dude](https://twitter.com/CY
 
 One of the questions I see asked most often in public communities is whether or not a four-year computer science or other IT-related degree is a hard requirement for working in the security field.  Let me be completely honest: *in some cases, yes*.  Many positions require that degree as a bare-minimum foot-in-the-door differentiator.  Technical degrees such as Computer Science or Cybersecurity provide a great starting point for someone interested in Information Security.  That said, I find a hard requirement for a technical degree foolhardy and obtuse.
 
-![College](https://swannysec.github.io/public/college.jpg)
+![College](//swannysec.net/public/college.jpg)
 
 You're probably expecting me to say I don't think a degree is important at all; you'll be disappointed.  While it should not be required in most cases, a degree still has a lot of value.  What I do believe, however, is that the degrees sought should not be limited to CS/IT fields.  My Bachelor's Degree is in Political Science with a focus on International Relations and a minor in History.  So what's this liberal arts yuppie doing in InfoSec?  What might surprise you is just how valuable that degree has been for me.  A degree in Political Science/International Relations will ensure that you can effectively communicate, both verbally and in writing.  It will ensure you are well prepared to build, relay, and defend an argument.  It will give you the foundations of good research and analytical procedure.  
 
