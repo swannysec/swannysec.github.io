@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Linking TorrentLocker to Pony - Pt. 1
 layout: post
 tags: [Analysis, TorrentLocker, Pony]
