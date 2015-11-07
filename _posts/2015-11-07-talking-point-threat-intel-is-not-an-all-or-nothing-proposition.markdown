@@ -23,3 +23,6 @@ Don't believe me?  Take it from some people who live and breathe threat intellig
 Threat intelligence is *not an all or nothing proposition.*  Small organizations can, and should, implement a threat intelligence capability scaled to their maturity level.  No one advocates attempting to plop a fully matured infosec program in place on day one.  Why should we take the same approach with threat intelligence?  Let threat intelligence mature on a scale along with an information security program and make it an integral part of those information security operations.
 
 If you're still with me, and you want to start small, I'll outline a few ways to do so in a follow up post in a few days.  I'd love to hear some feedback; you can find me [@swannysec](https://twitter.com/swannysec).
+
+
+*Photo Credit: [Emory Allen](https://www.flickr.com/photos/ocularinvasion/)*
