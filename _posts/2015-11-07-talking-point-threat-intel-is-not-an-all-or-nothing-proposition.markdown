@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Talking Point - Threat Intel is Not an All or Nothing Proposition
 layout: post
 tags: [Talking_Point, Threat_Intelligence]
