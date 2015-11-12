@@ -1,0 +1,713 @@
+<body class="">
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>John D. Swanson</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style>
+            .clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  word-spacing: 5px;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+}
+body {
+  font-family: 'Lato';
+  background: #f0f0f0;
+  color: #333333;
+}
+.main {
+  padding: 5px;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px;
+}
+.card-nested {
+  min-height: 0;
+  margin-bottom: 10px;
+  border-width: 1px 0 0 0;
+}
+.background-card {
+  padding: 10px 20px;
+}
+.card-wrapper {
+  padding: 5px;
+}
+.text-bolder {
+  font-weight: bold;
+}
+.background-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
+  text-align: center;
+}
+.background-details .detail .info {
+  width: 100%;
+}
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.profile-pic {
+  padding: 20px 0;
+}
+.contact-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.contact-details .detail .icon {
+  padding: 0 10px;
+  color: #707070;
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.contact-details .detail .icon,
+.contact-details .detail .info {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 992px) {
+  .profile-card {
+    min-height: 180px !important;
+  }
+  .profile-card .detail {
+    display: inline-block !important;
+  }
+  .profile-card .contact-details {
+    text-align: center !important;
+  }
+  .profile-card .social-links {
+    padding-top: 10px;
+  }
+  .card-wrapper {
+    position: static;
+    width: 100%;
+    top: 0;
+  }
+  hr {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+}
+.social-link {
+  margin-left: 5px;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+.link-github {
+  color: #454545;
+}
+.link-github:hover {
+  color: #2b2b2b;
+}
+.link-twitter {
+  color: #33ccff;
+}
+.link-twitter:hover {
+  color: #00bfff;
+}
+.link-blog {
+  color: #f36f24;
+}
+.link-blog:hover {
+  color: #d8560c;
+}
+.link-linkedin {
+  color: #007bb6;
+}
+.link-linkedin:hover {
+  color: #005983;
+}
+.link-skype {
+  color: #12a5f4;
+}
+.link-skype:hover {
+  color: #0986ca;
+}
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 10px;
+}
+
+        </style>
+
+
+
+        <script>
+            window.onload = function () {
+                $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+                $( ".js-tooltip" ).tooltip();
+            }
+        </script>
+        <div class="container-fluid">
+            <div class="row main clearfix">
+                <section class="col-md-3 card-wrapper">
+                    <div class="card profile-card">
+                        <div class="profile-pic">
+                            <img class="media-object img-circle center-block" data-src="holder.js/64x64" alt="64x64" src="//www.gravatar.com/avatar/1404692fbe931775558c94d2ff0a2293?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px;" title="">
+                        </div>
+                            <h3 class="text-center text-bolder"> John D. Swanson</h3>
+                            <h5 class="text-muted text-center">Network Security Engineer</h5>
+                            <hr>
+
+                            <div class="contact-details clearfix">
+
+                                    <div class="detail">
+                                        <span class="icon">
+                                            <i class="fa fa-lg fa-location-arrow"></i>
+                                        </span>
+
+                                            <span class="info">
+                                                Salisbury, Maryland,
+                                                US
+                                            </span>
+                                    </div>
+
+
+                                    <div class="detail">
+                                        <span class="icon">
+                                            <i class="fa fa-lg fa-envelope"></i>
+                                        </span>
+
+                                        <span class="info">
+                                            <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="5a292d3b342935347430353234743e1a3d373b333674393537">[email&nbsp;protected]</a><script data-cfhash="f9e31" type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script>
+                                        </span>
+                                    </div>
+
+                            </div>
+
+                            <hr>
+
+                            <div class="social-links text-center">
+                                    <a class="fa fa-twitter fa-2x social-link link-twitter" href="http://www.twitter.com/swannysec" target="_blank"></a>
+                                    <a class="fa fa-rss fa-2x social-link link-blog" href="https://swannysec.net" target="_blank"></a>
+                            </div>
+                    </div>
+                </section>
+
+                <section class="col-md-9 card-wrapper pull-right">
+                    <div class="card background-card">
+                        <h4 class="text-uppercase text-bolder">Background</h4>
+                        <hr>
+
+                        <div class="background-details">
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-user"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        About
+                                    </h4>
+
+                                    <div class="content">
+                                        Information security professional with more than seven years of experience in information technology and security.  Specialties include network and security architecture and design, next-generation firewalls and intrusion prevention, vulnerability and risk assessment, information security awareness, and incident response.  Holds a Master’s Degree in Information Assurance from an NSA/DHS National Center for Academic Excellence in Information Assurance and Cyber Defense Education.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-building"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Work Experience
+                                    </h4>
+
+                                    <ul class="list-unstyled">
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>Network Security Engineer</strong>,&nbsp;Salisbury University</p>
+                                                    <p>Serving as the primary network security administrator and information security professional; responsible for both the design, operation, and review of critical network and security systems.</p>
+                                                        <ul>
+                                                                <li> Primary responsibility for most information security functions. </li>
+                                                                <li> Second level incident responder and incident response leader. </li>
+                                                                <li> Risk assessment, vulnerability analysis, SIEM.  </li>
+                                                                <li> Successfully led implementation of a complete network and security overhaul over two fiscal years. </li>
+                                                        </ul>
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        May, 2012
+                                                    </p>
+                                                    <p>
+                                                            <span class="label label-success">
+                                                                Currently Working
+                                                            </span>
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-clock-o icon-left"></i>
+                                                        3 years 6 months
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>Network Engineer</strong>,&nbsp;Salisbury University</p>
+                                                    <p>Responsible for the design and operation of critical network and security systems.</p>
+                                                        <ul>
+                                                                <li> Focus on enterprise firewalls, SIEM, and network monitoring. </li>
+                                                                <li> Led design efforts for a complete network and security overhaul featuring NGFWs. </li>
+                                                        </ul>
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        Aug, 2011
+                                                    </p>
+                                                    <p>
+                                                            <strong>Left:</strong>&nbsp;
+                                                            May, 2012
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-clock-o icon-left"></i>
+                                                        9 months
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>IT Support Associate</strong>,&nbsp;Salisbury University</p>
+                                                    <p>Served as desktop security coordinator and primary incident responder.</p>
+                                                        <ul>
+                                                                <li> Responded to and remediated 200+ security incidents. </li>
+                                                                <li> Led efforts to overhaul endpoint security posture to include: anti-virus replacement, implementation of third-party patch management, and the introduction of limited privilege computing. </li>
+                                                        </ul>
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        Aug, 2008
+                                                    </p>
+                                                    <p>
+                                                            <strong>Left:</strong>&nbsp;
+                                                            Aug, 2011
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-clock-o icon-left"></i>
+                                                        2 years 11 months
+                                                    </p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-code"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Skills
+                                    </h4>
+
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                                <li class="card card-nested card-skills">
+                                                    <!--
+                                                        <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                                                            <div class="skill-progress master">
+                                                            </div>
+                                                        </div>
+                                                     -->
+                                                    <div class="skill-info">
+                                                        <strong>Information Security</strong>
+
+                                                        <div class="space-top labels">
+                                                                <code>Firewalls</code>
+                                                                <code>SIEM</code>
+                                                                <code>Vulnerability Management</code>
+                                                                <code>Risk Assessment</code>
+                                                                <code>Incident Response</code>
+                                                                <code>Threat Intelligence</code>
+                                                                <code>Palo Alto Networks</code>
+                                                                <code>Splunk</code>
+                                                                <code>Tenable Networks</code>
+                                                                <code>Tufin</code>
+                                                                <code>Maltego</code>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="card card-nested card-skills">
+                                                    <!--
+                                                        <div class="skill-level js-tooltip" title="Intermediate" data-placement="left">
+                                                            <div class="skill-progress intermediate">
+                                                            </div>
+                                                        </div>
+                                                     -->
+                                                    <div class="skill-info">
+                                                        <strong>Networking</strong>
+
+                                                        <div class="space-top labels">
+                                                                <code>Switching</code>
+                                                                <code>Routing</code>
+                                                                <code>Wireless</code>
+                                                                <code>Network Design</code>
+                                                                <code>Alcatel-Lucent</code>
+                                                                <code>Juniper Networks</code>
+                                                                <code>Aruba Networks</code>
+                                                                <code>Solarwinds</code>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="card card-nested card-skills">
+                                                    <!--
+                                                        <div class="skill-level js-tooltip" title="Intermediate" data-placement="left">
+                                                            <div class="skill-progress intermediate">
+                                                            </div>
+                                                        </div>
+                                                     -->
+                                                    <div class="skill-info">
+                                                        <strong>System Administration</strong>
+
+                                                        <div class="space-top labels">
+                                                                <code>Windows Server</code>
+                                                                <code>Ubuntu Server</code>
+                                                                <code>CentOS</code>
+                                                                <code>Microsoft SCCM</code>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-mortar-board"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Education
+                                    </h4>
+
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                                <li class="card card-nested">
+                                                    <div class="content has-sidebar">
+                                                        <p>
+                                                            <strong>Information Assurance, MSIT</strong>,&nbsp;
+                                                            University of Maryland University College
+                                                        </p>
+                                                        <i>3.917</i>
+                                                        <div class="space-top labels">
+                                                                <span class="label label-keyword">Upsilon Pi Epsilon Honor Society</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sidebar text-muted text-center">
+                                                        <p>
+                                                            <strong>Started:</strong>&nbsp;
+                                                            Jan, 2010
+                                                        </p>
+                                                        <p>
+                                                                <strong>Completion:</strong>&nbsp;
+                                                                Jan, 2011
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="card card-nested">
+                                                    <div class="content has-sidebar">
+                                                        <p>
+                                                            <strong>Political Science, BA</strong>,&nbsp;
+                                                            Salisbury University
+                                                        </p>
+                                                        <i>3.816</i>
+                                                        <div class="space-top labels">
+                                                                <span class="label label-keyword">Phi Kappa Phi Honor Society</span>
+                                                                <span class="label label-keyword">Phi Alpha Theta Honor Society</span>
+                                                                <span class="label label-keyword">Pi Sigma Alpha Honor Society</span>
+                                                                <span class="label label-keyword">Pi Gamma Mu Honor Society</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sidebar text-muted text-center">
+                                                        <p>
+                                                            <strong>Started:</strong>&nbsp;
+                                                            Jan, 2004
+                                                        </p>
+                                                        <p>
+                                                                <strong>Completion:</strong>&nbsp;
+                                                                Jan, 2009
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="detail">
+                                    <div class="icon">
+                                        <i class="fa fa-lg fa-trophy"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h4 class="title text-uppercase">
+                                            Awards
+                                        </h4>
+
+                                        <div class="content">
+                                            <ul class="list-unstyled">
+                                                    <li class="card card-nested">
+                                                        <div class="content has-sidebar">
+                                                            <p>
+                                                                <strong>Splunk Certified Knowledge Manager</strong>,&nbsp;
+                                                                Splunk Inc.
+                                                            </p>
+                                                            <p class="clear-margin">  </p>
+                                                        </div>
+                                                        <div class="sidebar text-muted text-center">
+                                                            <p>
+                                                                <strong>Awarded on:</strong>&nbsp;
+                                                                Nov 02, 2015
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="card card-nested">
+                                                        <div class="content has-sidebar">
+                                                            <p>
+                                                                <strong>Splunk Certified Power User</strong>,&nbsp;
+                                                                Splunk Inc.
+                                                            </p>
+                                                            <p class="clear-margin">  </p>
+                                                        </div>
+                                                        <div class="sidebar text-muted text-center">
+                                                            <p>
+                                                                <strong>Awarded on:</strong>&nbsp;
+                                                                Oct 29, 2015
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="card card-nested">
+                                                        <div class="content has-sidebar">
+                                                            <p>
+                                                                <strong>Splunk Certified Admin</strong>,&nbsp;
+                                                                Splunk Inc.
+                                                            </p>
+                                                            <p class="clear-margin">  </p>
+                                                        </div>
+                                                        <div class="sidebar text-muted text-center">
+                                                            <p>
+                                                                <strong>Awarded on:</strong>&nbsp;
+                                                                Nov 11, 2015
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="card card-nested">
+                                                        <div class="content has-sidebar">
+                                                            <p>
+                                                                <strong>Palo Alto Accredited Configuration Engineer</strong>,&nbsp;
+                                                                Palo Alto Networks
+                                                            </p>
+                                                            <p class="clear-margin">  </p>
+                                                        </div>
+                                                        <div class="sidebar text-muted text-center">
+                                                            <p>
+                                                                <strong>Awarded on:</strong>&nbsp;
+                                                                Nov 11, 2015
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="icon">
+                                        <i class="fa fa-lg fa-child"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h4 class="title text-uppercase">
+                                            Volunteer Work
+                                        </h4>
+
+                                        <div class="content">
+                                            <ul class="list-unstyled">
+                                                    <li class="card card-nested">
+                                                        <div class="content has-sidebar">
+                                                            <p>
+                                                                <strong>Chair, City Park Committee</strong>,&nbsp;
+                                                                City of Salisbury, MD
+                                                            </p>
+                                                            <p></p>
+                                                            <ul>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="sidebar text-muted text-center">
+                                                            <p>
+                                                                <strong>Since:</strong>&nbsp;
+                                                                Jun, 2004
+                                                            </p>
+                                                            <p>
+                                                                    <strong>Until:</strong>&nbsp;
+                                                                    Aug, 2008
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="card card-nested">
+                                                        <div class="content has-sidebar">
+                                                            <p>
+                                                                <strong>Hurricane Katrina Relief Effort Volunteer</strong>,&nbsp;
+                                                                American Red Cross
+                                                            </p>
+                                                            <p></p>
+                                                            <ul>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="sidebar text-muted text-center">
+                                                            <p>
+                                                                <strong>Since:</strong>&nbsp;
+                                                                Sep, 2005
+                                                            </p>
+                                                            <p>
+                                                                    <strong>Until:</strong>&nbsp;
+                                                                    Sep, 2005
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="detail">
+                                    <div class="icon">
+                                        <i class="fa fa-lg fa-heart"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h4 class="title text-uppercase">
+                                            Interests
+                                        </h4>
+
+                                        <div class="content">
+                                            <ul class="list-unstyled">
+                                                    <li class="card card-nested">
+                                                        <p>
+                                                            <strong>Malware Analysis and OSINT</strong>
+                                                        </p>
+
+                                                        <div class="space-top labels">
+                                                                <span class="label label-keyword">Tracking Malware Networks</span>
+                                                                <span class="label label-keyword">Tool Development Collaboration</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="card card-nested">
+                                                        <p>
+                                                            <strong>International Relations and Defense</strong>
+                                                        </p>
+
+                                                        <div class="space-top labels">
+                                                                <span class="label label-keyword">Politics</span>
+                                                                <span class="label label-keyword">Intelligence</span>
+                                                                <span class="label label-keyword">Defense Technology</span>
+                                                        </div>
+                                                    </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+
+</body>
