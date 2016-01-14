@@ -1,6 +1,6 @@
 ---
 published: true
-title: Starting Small with Threat Intelligence - Pt. 1
+title: Starting Small with Threat Intel - Pt. 1
 layout: post
 tags: [Threat_Intelligence, How_To]
 ---
