@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Starting Small with Threat Intel - Pt. 2
 layout: post
 tags: [Threat_Intelligence, How_To]
