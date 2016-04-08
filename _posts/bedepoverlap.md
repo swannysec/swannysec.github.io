@@ -28,7 +28,7 @@ As you can see above, I've re-arranged the graph into the Organic layout in orde
 
 ![First Links](https://swannysec.net/public/bedep7.jpg)
 
-At this point, we have clear overlap between these three actors as they're utilizing some of the same hosting providers and individual hosts to server malicious domains.  In order to go one step further, I expanded the graph again, this time by enriching all IP addresses with ThreatCrowd. (A note of caution here: this can return large number of domains if an IP you choose to expand is a large webhost, so take care to double-check whether returned entities are relevant.)  Here's what the graph looks like after one round of domain enrichment and one round of IP enrichment:
+At this point, we have clear overlap between these three actors as they're utilizing some of the same hosting providers and individual hosts to serve malicious domains.  In order to go one step further, I expanded the graph again, this time by enriching all IP addresses with ThreatCrowd. (A note of caution here: this can return large number of domains if an IP you choose to expand is a large webhost, so take care to double-check whether returned entities are relevant.)  Here's what the graph looks like after one round of domain enrichment and one round of IP enrichment:
 
 ![IPs Enriched](https://swannysec.net/public/bedep8.jpg)
 
