@@ -69,7 +69,7 @@ At this stage, I added saramarsh29@yahoo.com back to our original graph, and use
 
 ![Fourth Actor](https://swannysec.net/public/bedep13.jpg)
 
-Here's an additional representation using bubble view by number of links.  Again, the actor e-mails are in red:
+Here's an additional representation using bubble view.  This view adjusts the size of the entities based, in this case, on the number of links associated with them.  Again, the actor e-mails are in red:
 
 ![Bubbles](https://swannysec.net/public/bedep15.jpg)
 
