@@ -32,7 +32,7 @@ At this point, we have clear overlap between these three actors as they're utili
 
 ![IPs Enriched](https://swannysec.net/public/bedep8.jpg)
 
-At this point, I began working through new clusters of domains looking for new leads by checking whois records with PassiveTotal and looking for malware and other associated infrastructure with ThreatCrowd.  After hunting around for a while, I discovered the following indicator, with new domains discovered from it circled in red:
+From here, I began working through new clusters of domains looking for new leads by checking whois records with PassiveTotal and looking for malware and other associated infrastructure with ThreatCrowd.  After hunting around for a while, I discovered the following indicator, with new domains discovered from it circled in red:
 
 ![New Cluster](https://swannysec.net/public/bedep9.jpg)
 
@@ -69,7 +69,7 @@ At this stage, I added saramarsh29@yahoo.com back to our original graph, and use
 
 ![Fourth Actor](https://swannysec.net/public/bedep13.jpg)
 
-At this stage is it readily apparent that we've uncovered an additional actor in this Angler EK/Bedep campaign. In order to further demonstrate some of the relationships between these actors, I selected four related domains from the graph above, moved them to a fresh graph, and enriched them with both ThreatCrowd and PassiveTotal (displaying only relevant results):
+By now, it is readily apparent that we've uncovered an additional actor in this Angler EK/Bedep campaign. In order to further demonstrate some of the relationships between these actors, I selected four related domains from the graph above, moved them to a fresh graph, and enriched them with both ThreatCrowd and PassiveTotal (displaying only relevant results):
 
 ![All in the Family](https://swannysec.net/public/bedep14.jpg)
 
