@@ -69,6 +69,10 @@ At this stage, I added saramarsh29@yahoo.com back to our original graph, and use
 
 ![Fourth Actor](https://swannysec.net/public/bedep13.jpg)
 
+Here's an additional representation using bubble view by number of links.  Again, the actor e-mails are in red:
+
+![Bubbles](https://swannysec.net/public/bedep15.jpg)
+
 By now, it is readily apparent that we've uncovered an additional actor in this Angler EK/Bedep campaign. In order to further demonstrate some of the relationships between these actors, I selected four related domains from the graph above, moved them to a fresh graph, and enriched them with both ThreatCrowd and PassiveTotal (displaying only relevant results):
 
 ![All in the Family](https://swannysec.net/public/bedep14.jpg)
