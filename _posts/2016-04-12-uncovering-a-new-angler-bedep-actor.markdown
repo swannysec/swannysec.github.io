@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Uncovering a New Angler-Bedep Actor
 layout: post
 tags: [Analysis, Angler, Bedep]
