@@ -83,9 +83,11 @@ By now, it is readily apparent that we've uncovered an additional actor in this 
 
 ![All in the Family](https://swannysec.net/public/bedep14.jpg)
 
-The above image displays in a nutshell the close relationship between these actors. Nick Biasini did some fine work in uncovering the first three actors; now a fourth is apparent as well.  A list of domains registered to saramarsh29@yahoo.com is below; this can also be found in an Alienvault OTX [pulse](https://otx.alienvault.com/pulse/570d0e86aef92133b75e1635/).  The same list and the Maltego graph are available on my [GitHub repo](https://github.com/swannysec/sara-marsh-angler-bedep).
+The above image displays in a nutshell the close relationship between these actors. Nick Biasini did some fine work in uncovering the first three actors; now a fourth is apparent as well.  A list of domains registered to saramarsh29@yahoo.com is below; this can also be found in an Alienvault OTX [pulse](https://otx.alienvault.com/pulse/570d0e86aef92133b75e1635/) which is embedded below.  The same list and the Maltego graph are available on my [GitHub repo](https://github.com/swannysec/sara-marsh-angler-bedep).
 
 As always, I appreciate any feedback; give me a shout [@swannysec](https://twitter.com/swannysec).
+
+<script src="https://otx.alienvault.com/pulse/570d0e86aef92133b75e1635.js"></script>
 
 Likely Angler EK/Bedep Domains Registered by saramarsh29@yahoo.com:
 
