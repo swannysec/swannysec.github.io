@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Talking Point - The Whiz-Bang Intel Bias
 layout: post
 tags: [Talking_Point, Threat_Intelligence]
