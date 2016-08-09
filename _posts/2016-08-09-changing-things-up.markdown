@@ -3,6 +3,7 @@ published: false
 title: Changing Things Up
 layout: post
 tags: [Personal, Professional_Development]
+image: https://swannyset.net/public/Competence_Hierarchy.jpg
 ---
 If you're reading this, you've likely noticed that this blog and my twitter account have been quiet of late.  Summer is often a busy time, but my reasons for that are different than usual this year.  Over the last few months I've been engaged in a lengthy recruitment and interview process and I'm really excited to share that after a decade in public higher education, I'll be joining [Scott Roberts](https://www.twitter.com/sroberts) and the other fine folks at GitHub next week!  I'll be working in some form of DFIR role, but I'm not exactly certain what it will entail over the long run; GitHub is still a growing company after all.  In the near term, I intend to play Robin to Scott's Batman or perhaps serve as "Bad Guy Catcher Minion" while I learn as much as I can and find my "sea legs."
 
