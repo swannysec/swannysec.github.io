@@ -3,7 +3,7 @@ published: true
 title: Changing Things Up
 layout: post
 tags: [Personal, Professional_Development]
-image: https://swannyset.net/public/Competence_Hierarchy.jpg
+image: https://swannysec.net/public/Competence_Hierarchy.jpg
 ---
 If you're reading this, you've likely noticed that this blog and my twitter account have been quiet of late.  Summer is often a busy time, but my reasons for that are different than usual this year.  Over the last few months I've been engaged in a lengthy recruitment and interview process and I'm really excited to share that after a decade in public higher education, I'll be joining [Scott Roberts](https://www.twitter.com/sroberts) and the other fine folks at GitHub next week!  I'll be working in some form of DFIR role, but I'm not exactly certain what it will entail over the long run; GitHub is still a growing company after all.  In the near term, I intend to play Robin to Scott's Batman or perhaps serve as "Bad Guy Catcher Minion" while I learn as much as I can and find my "sea legs."
 
@@ -15,7 +15,7 @@ The most fascinating part of the process for me was that each conversation was a
 
 So where do we go from here?  I'm presently suffering from an enormous case of [imposter syndrome](https://sroberts.github.io/2015/05/02/imposter-syndrome-in-dfir/).  The professional challenges involved in moving to GitHub are not insignificant.  The environment is a complete 180 from the one I've just spent a decade operating in, save some philosophical similarities.  Additionally, I'm going from a very broad infosec role that included engineering, architecture, policy and compliance work, and only some IR work, to a more specialized role that will primarily handle IR.  I will need to learn, or re-learn, a lot of new things both technically and in terms of business process.  The near term will be dedicated to getting to know GitHub, building or rebuilding DFIR-specific skills, and moving back up Burch's [hierarchy of competence](https://en.wikipedia.org/wiki/Four_stages_of_competence) in an effort to defeat imposter syndrome and be a more effective incident responder.
 
-![Hierarchy](https://swannyset.net/public/Competence_Hierarchy.jpg)
+![Hierarchy](https://swannysec.net/public/Competence_Hierarchy.jpg)
 
 I will continue to blog and tweet, though I expect my focus will shift somewhat from threat intelligence to DFIR matters as I tend to use the blog, and to a lesser extent Twitter, to flesh out and reinforce what I'm learning or working on.  I will likely contribute with less frequency, however, as I have a lot to process as I onboard at GitHub and I have some personal goals for the coming year I'd like to devote some time to:
 
