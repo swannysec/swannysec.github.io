@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Changing Things Up
 layout: post
 tags: [Personal, Professional_Development]
