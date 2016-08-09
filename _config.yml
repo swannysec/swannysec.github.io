@@ -1,5 +1,5 @@
 excerpt_separator: ""
-pygments: true
+highlighter: rouge
 markdown: kramdown
 title: swannysec
 tagline: Musings on InfoSec
