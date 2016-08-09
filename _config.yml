@@ -7,6 +7,11 @@ description: Documenting my thoughts on security, professional development, and 
 paginate: 5
 url: https://swannysec.net
 enforce_ssl: www.swannysec.net
+twitter:
+  username: swannysec
+author:
+  twitter: swannysec
+logo: https://swannysec.net/public/stachelogo.png
 gems:
   - jekyll-seo-tag
 
