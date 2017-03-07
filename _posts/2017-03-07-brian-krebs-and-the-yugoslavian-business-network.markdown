@@ -1,6 +1,6 @@
 ---
 published: true
-title: Brian Krebs and the Yugoslavian Business Network: Analyzing Nebula
+title: Brian Krebs and the Yugoslavian Business Network - Analyzing Nebula
 layout: post
 tags: [Analysis, Nebula, Sundown]
 image: https://swannysec.net/public/Nebula10.jpg
