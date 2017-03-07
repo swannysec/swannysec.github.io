@@ -5,7 +5,6 @@ layout: post
 tags: [Analysis, Nebula, Sundown]
 image: https://swannysec.net/public/Nebula10.jpg
 ---
-
 # The Rise and Fall of an Empire
 
 Angler, and to a lesser extent, Nuclear, were the predominant exploit kits (EKs) of 2015 and the first half of 2016 before suddenly disappearing early last summer.  With plenty of money to be made on the distribution of ransomware and banking trojans, other EKs quickly filled the void.  Neutrino and RIG were the first to respond, though Neutrino itself disappeared in September of 2016.
