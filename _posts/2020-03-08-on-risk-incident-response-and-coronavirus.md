@@ -154,8 +154,8 @@ While we can't prevent the likes of COVID-19 or the security incidents we're res
 As always, I welcome your feedback; please reach out [@swannysec](https://twitter.com/swannysec).
 
 ## References and More Information
-¹ [https://systems.jhu.edu/research/public-health/ncov/](https://systems.jhu.edu/research/public-health/ncov/)
-² [https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+¹ [https://systems.jhu.edu/research/public-health/ncov/](https://systems.jhu.edu/research/public-health/ncov/) <br/>
+² [https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) <br/>
 ³ [https://wwwnc.cdc.gov/eid/article/26/5/19-0995-f1](https://wwwnc.cdc.gov/eid/article/26/5/19-0995-f1)
 
 For more on Coronavirus risk from a business perspective:
