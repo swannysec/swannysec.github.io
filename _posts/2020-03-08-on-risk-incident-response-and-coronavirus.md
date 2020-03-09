@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: On Risk, Incident Response, and Coronavirus
 layout: post
 tags: [Incident_Response, Personal]
@@ -11,7 +11,7 @@ If you want to skip to the goods, click [here](#coronavirus---a-primer-and-perso
 
 ## Foreword
 
-It's been [a while](https://swannysec.net/2017/03/07/brian-krebs-and-the-yugoslavian-business-network.html) since I spent time writing for personal gratification.  My personal and professional journey has lead me pretty far from analyzing exploit kits on a day to day basis.  I've spent the last three and a half years building out and leading GitHub's Security Incident Response Team (SIRT) and the processes that guide it.  I've had an opportunity to take the foundation of _how_ we work laid out by those that came before me, frame it out with scalable and compliant process that fits GitHub's remote-first, asynchronous-by-default culture, and accelerate it through massive company growth and acquisition by Microsoft.  I was something like employee number 320 (not accounting for churn, of course); we're now over four times that size and still accelerating with an ever growing and awesome platform and product portfolio I'm proud to help protect.  I'd be remiss, however, if I didn't take an opportunity to thank the amazing professionals I'm lucky enough to call peers and teammates, GitHub SIRT would be nothing without their dedication, their creativity, their camaraderie, and their tireless excellence.
+It's been [a while](https://swannysec.net/2017/03/07/brian-krebs-and-the-yugoslavian-business-network.html) since I spent time writing for personal gratification.  My personal and professional journey has lead me pretty far from analyzing exploit kits on a day to day basis.  I've spent the last three and a half years building out and leading GitHub's Security Incident Response Team (SIRT) and the processes that guide it.  I've had an opportunity to take the foundation of _how_ we work laid out by those that came before me, frame it out with scalable and compliant process that fits GitHub's remote-first, asynchronous-by-default culture, and accelerate it through massive company growth and acquisition by Microsoft.  I was something like employee number 310 (not accounting for churn, of course); we're now over four times that size and still accelerating with an ever growing and awesome platform and product portfolio I'm proud to help protect.  I'd be remiss, however, if I didn't take an opportunity to thank the amazing professionals I'm lucky enough to call peers and teammates, GitHub SIRT would be nothing without their dedication, their creativity, their camaraderie, and their tireless excellence.
 
 With that out of the way, on to the purpose of this post: thinking about risk management and incident response as framed by current events, namely the novel coronavirus officially known as COVID-19.  Before we get to the good stuff, a brief disclaimer:
 
