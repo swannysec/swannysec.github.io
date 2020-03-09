@@ -154,10 +154,10 @@ While we can't prevent the likes of COVID-19 or the security incidents we're res
 As always, I welcome your feedback; please reach out [@swannysec](https://twitter.com/swannysec).
 
 ## References and More Information
-¹ https://systems.jhu.edu/research/public-health/ncov/ <br/>
-² https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6 <br/>
-³ https://wwwnc.cdc.gov/eid/article/26/5/19-0995-f1
+¹ [https://systems.jhu.edu/research/public-health/ncov/](https://systems.jhu.edu/research/public-health/ncov/)
+² [https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+³ [https://wwwnc.cdc.gov/eid/article/26/5/19-0995-f1](https://wwwnc.cdc.gov/eid/article/26/5/19-0995-f1)
 
 For more on Coronavirus risk from a business perspective:
-- https://www.bridgewater.com/research-library/daily-observations/Richard-Falkenrath-how-we-are-thinking-about-coronavirus-and-its-impact-on-markets/ (hat tip to [@CYINT_dude](https://twitter.com/CYINT_dude))
-- https://medium.com/sequoia-capital/coronavirus-the-black-swan-of-2020-7c72bdeb9753 (hat tip to [@rickhholland](https://twitter.com/rickhholland))
+- [https://www.bridgewater.com/research-library/daily-observations/Richard-Falkenrath-how-we-are-thinking-about-coronavirus-and-its-impact-on-markets/](https://www.bridgewater.com/research-library/daily-observations/Richard-Falkenrath-how-we-are-thinking-about-coronavirus-and-its-impact-on-markets/) (hat tip to [@CYINT_dude](https://twitter.com/CYINT_dude))
+- [https://medium.com/sequoia-capital/coronavirus-the-black-swan-of-2020-7c72bdeb9753](https://medium.com/sequoia-capital/coronavirus-the-black-swan-of-2020-7c72bdeb9753) (hat tip to [@rickhholland](https://twitter.com/rickhholland))
