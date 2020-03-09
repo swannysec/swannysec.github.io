@@ -7,7 +7,7 @@ image: https://swannysec.net/public/epidemic_response.jpg
 ---
 # On Risk, Incident Response, and Coronavirus
 
-If you want to skip to the goods, click [here](#coronavirus-a-primer-and-personal-approach).  If you want to skip straight to the purely professional content, click [here](#thinking-about-risk).
+If you want to skip to the goods, click [here](#coronavirus---a-primer-and-personal-approach).  If you want to skip straight to the purely professional content, click [here](#thinking-about-risk).
 
 ## Foreword
 
