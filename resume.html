@@ -1,15 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>John D. Swanson</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <!-- link rel="shortcut icon" href="favicon.ico" / -->
-    <style>
-      .relative {
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>John D. Swanson</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?z1lat9');
+  src:  url('fonts/icomoon.eot?z1lat9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z1lat9') format('truetype'),
+    url('fonts/icomoon.woff?z1lat9') format('woff'),
+    url('fonts/icomoon.svg?z1lat9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gitlab .path1:before {
+  content: "\e906";
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-gitlab .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path4:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
+}
+.icon-gitlab .path5:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-gitlab .path6:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path7:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
+}
+.icon-gitlab .path8:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-meetup .path1:before {
+  content: "\e901";
+  color: rgb(255, 255, 255);
+}
+.icon-meetup .path2:before {
+  content: "\e902";
+  margin-left: -1.5em;
+  color: rgb(240, 1, 1);
+}
+.icon-meetup .path3:before {
+  content: "\e903";
+  margin-left: -1.5em;
+  color: rgb(3, 3, 3);
+}
+.icon-blogger:before {
+  content: "\e900";
+}
+.icon-exercism:before {
+  content: "\e601";
+}
+.icon-telegram:before {
+  content: "\e904";
+}
+.icon-flickr:before {
+  content: "\f16e";
+}
+.icon-medium:before {
+  content: "\f23a";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-book:before {
+  content: "\f02d";
+}
+.icon-linkedin:before {
+  content: "\f08c";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-link:before {
+  content: "\f0c1";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-googleplus:before {
+  content: "\f0d5";
+}
+.icon-circle:before {
+  content: "\f111";
+}
+.icon-code:before {
+  content: "\f121";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-stackoverflow:before {
+  content: "\f16c";
+}
+.icon-bitbucket:before {
+  content: "\f171";
+}
+.icon-tumblr:before {
+  content: "\f173";
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-skype:before {
+  content: "\f17e";
+}
+.icon-foursquare:before {
+  content: "\f180";
+}
+.icon-gittip:before {
+  content: "\f184";
+}
+.icon-gratipay:before {
+  content: "\f184";
+}
+.icon-stackexchange:before {
+  content: "\f18d";
+}
+.icon-vimeo:before {
+  content: "\f194";
+}
+.icon-graduation-cap:before {
+  content: "\f19d";
+}
+.icon-language:before {
+  content: "\f1ab";
+}
+.icon-child:before {
+  content: "\f1ae";
+}
+.icon-behance:before {
+  content: "\f1b5";
+}
+.icon-spotify:before {
+  content: "\f1bc";
+}
+.icon-soundcloud:before {
+  content: "\f1be";
+}
+.icon-codepen:before {
+  content: "\f1cb";
+}
+.icon-hackernews:before {
+  content: "\f1d4";
+}
+.icon-lastfm:before {
+  content: "\f202";
+}
+.icon-angellist:before {
+  content: "\f209";
+}
+.icon-facebook:before {
+  content: "\f230";
+}
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-trophy:before {
+  content: "\e605";
+}
+.icon-office:before {
+  content: "\e606";
+}
+.icon-clock:before {
+  content: "\e60a";
+}
+.icon-reddit:before {
+  content: "\e609";
+}
+.icon-profile:before {
+  content: "\e600";
+}
+.icon-tools:before {
+  content: "\e034";
+}
+.icon-location:before {
+  content: "\e602";
+}
+.icon-mail:before {
+  content: "\e603";
+}
+.icon-phone:before {
+  content: "\e03f";
+}
+.icon-newspaper:before {
+  content: "\e607";
+}
+.icon-chevron-down:before {
+  content: "\e60c";
+}
+.icon-chevron-up:before {
+  content: "\e60d";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e60b";
+}
+.icon-thumbs-up:before {
+  content: "\e604";
+}
+.icon-board:before {
+  content: "\e608";
+}
+
+.relative {
   position: relative;
 }
 .clear-margin {
@@ -21,14 +252,19 @@
 .space-right {
   margin-right: 10px;
 }
-.icon-left {
+.space-bottom {
+  margin-bottom: 10px;
+}
+.mr-5 {
   margin-right: 5px;
 }
-.icon-right {
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-5 {
   margin-left: 5px;
 }
 .labels {
-  word-spacing: 5px;
   line-height: 2;
 }
 .label-keyword {
@@ -38,6 +274,19 @@
   font-size: 0.9em;
   padding: 5px;
   border: 1px solid #357ebd;
+  margin-right: 5px;
+}
+.label-keyword:last-child {
+  margin-right: 0;
+}
+.label-keyword p {
+  margin: 0;
+}
+.label-keyword a {
+  color: white;
+}
+.label-keyword a:hover {
+  text-decoration: none;
 }
 .link-disguise {
   color: inherit;
@@ -53,24 +302,59 @@
     margin-bottom: 0;
   }
 }
+.fs-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fs-2x {
+  font-size: 2em;
+}
+.fs-3x {
+  font-size: 3em;
+}
+.fs-4x {
+  font-size: 4em;
+}
+.btn-circle-sm {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  outline: none !important;
+}
+/* the version when the icon file is last updated */
+@font-face {
+  font-family: 'jst-elegant';
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo");
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jst-elegant' !important;
+}
 body {
   font-family: 'Lato';
   background: #f0f0f0;
-  color: #333333;
+  color: #333;
 }
 .main {
   padding: 5px;
 }
 .card {
-  background: #ffffff;
+  background: white;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   min-height: 300px;
-  padding: 10px;
+  padding: 10px 0;
 }
 .card-nested {
   min-height: 0;
-  margin-bottom: 10px;
   border-width: 1px 0 0 0;
 }
 .card-nested:before,
@@ -97,12 +381,8 @@ body {
     float: none !important;
   }
 }
-.text-bolder {
-  font-weight: bold;
-}
 .background-details .detail {
   display: table;
-  padding: 10px 0;
 }
 .background-details .detail .icon {
   min-width: 45px;
@@ -187,6 +467,9 @@ body {
   top: 4px;
   left: -10px;
 }
+.mop-wrapper > p:last-child {
+  margin: 0;
+}
 /*
     Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
 */
@@ -201,7 +484,6 @@ body {
   display: block;
   border-radius: 50%;
   text-align: center;
-  padding-top: 10px;
   background-color: white;
   font-size: 1.5em;
   color: #357ebd;
@@ -209,6 +491,12 @@ body {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  text-decoration: none !important;
+}
+.floating-nav-trigger > [class^="icon-"],
+.floating-nav-trigger [class*=" icon-"],
+.floating-nav-trigger > .close-icon {
+  line-height: 50px;
 }
 .floating-nav-trigger .close-icon {
   display: none;
@@ -216,7 +504,6 @@ body {
 .floating-nav-trigger:hover {
   color: #1f496e;
   background-color: #e6e6e6;
-  text-decoration: none;
 }
 .floating-nav-trigger.is-open {
   -webkit-box-shadow: none;
@@ -225,7 +512,7 @@ body {
 .floating-nav-trigger.is-open .close-icon {
   display: inherit;
 }
-.floating-nav-trigger.is-open .fa-bars {
+.floating-nav-trigger.is-open .icon-bars {
   display: none;
 }
 .floating-nav-trigger.is-open:hover {
@@ -271,9 +558,6 @@ body {
 .floating-nav ul li a:hover {
   color: #1f496e;
 }
-.floating-nav ul li i.fa {
-  margin-right: 10px;
-}
 .floating-nav ul li:last-child {
   border-bottom: 0;
 }
@@ -291,6 +575,9 @@ body {
   .profile-card-wrapper {
     position: relative;
   }
+}
+.profile-card-wrapper .profile-card {
+  padding: 10px;
 }
 .profile-pic {
   padding: 20px 0;
@@ -411,12 +698,20 @@ body {
   color: #005983;
 }
 .link-skype {
-  color: #12a5f4;
+  color: #12A5F4;
 }
 .link-skype:hover,
 .link-skype:focus {
   text-decoration: none;
   color: #0986ca;
+}
+.link-instagram {
+  color: #e4405f;
+}
+.link-instagram:hover,
+.link-instagram:focus {
+  text-decoration: none;
+  color: #d31e40;
 }
 .link-stackoverflow {
   color: #8e8e92;
@@ -425,6 +720,22 @@ body {
 .link-stackoverflow:focus {
   text-decoration: none;
   color: #747479;
+}
+.link-stackexchange {
+  color: #62b0df;
+}
+.link-stackexchange:hover,
+.link-stackexchange:focus {
+  text-decoration: none;
+  color: #389bd6;
+}
+.link-lastfm {
+  color: #d12127;
+}
+.link-lastfm:hover,
+.link-lastfm:focus {
+  text-decoration: none;
+  color: #a51a1f;
 }
 .link-soundcloud {
   color: #e8822d;
@@ -459,7 +770,7 @@ body {
   color: #8c0717;
 }
 .link-gratipay {
-  color: #663300;
+  color: #630;
 }
 .link-gratipay:hover,
 .link-gratipay:focus {
@@ -539,7 +850,7 @@ body {
   color: #3b5687;
 }
 .link-angellist {
-  color: #000000;
+  color: black;
 }
 .link-angellist:hover,
 .link-angellist:focus {
@@ -553,6 +864,54 @@ body {
 .link-bitbucket:focus {
   text-decoration: none;
   color: #163758;
+}
+.link-hackernews {
+  color: #ff6600;
+}
+.link-hackernews:hover,
+.link-hackernews:focus {
+  text-decoration: none;
+  color: #cc5200;
+}
+.link-exercism {
+  color: #d81d4e;
+}
+.link-exercism:hover,
+.link-exercism:focus {
+  text-decoration: none;
+  color: #ab173e;
+}
+.link-blogger {
+  color: #FF9234;
+}
+.link-blogger:hover,
+.link-blogger:focus {
+  text-decoration: none;
+  color: #ff7701;
+}
+.link-medium {
+  color: #00AB6C;
+}
+.link-medium:hover,
+.link-medium:focus {
+  text-decoration: none;
+  color: #00784c;
+}
+.link-flickr {
+  color: black;
+}
+.link-flickr:hover,
+.link-flickr:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-telegram {
+  color: #3BABDD;
+}
+.link-telegram:hover,
+.link-telegram:focus {
+  text-decoration: none;
+  color: #2291c3;
 }
 .card-skills {
   position: relative;
@@ -590,7 +949,7 @@ body {
   background: #5cb85c;
 }
 .skill-info {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 @media (max-width: 480px) {
   .skill-info {
@@ -601,6 +960,9 @@ body {
   .quote {
     font-size: inherit;
   }
+}
+.icon-meetup .path2:before {
+  margin-left: 0;
 }
 @media print {
   a[href]:after {
@@ -638,679 +1000,117 @@ body {
     page-break-before: always;
   }
 }
+</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#publications"><i class="mr-10 icon-newspaper"></i>Publications</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="John D. Swanson" src="https://swannysec.net/public/avatar.jpg" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>John D. Swanson</b></h3><h5 class="text-muted" itemprop="jobTitle">Security Leader</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Bel Air, Maryland, US</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:swanson.john.d@gmail.com" itemprop="email">swanson.john.d@gmail.com</a></span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="https://swannysec.net" target="_blank">https://swannysec.net</a></span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-github icon-github" href="https://github.com/swannysec" target="_blank" data-toggle="tooltip" title="John D. Swanson on GitHub"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="www.linkedin.com/in/swannysec" target="_blank" data-toggle="tooltip" title="John D. Swanson on LinkedIn"></a><a class="fs-2x social-link link-twitter icon-twitter" href="https://twitter.com/swannysec" target="_blank" data-toggle="tooltip" title="John D. Swanson on Twitter"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Experienced security and risk leader with 14 years of experience from startup to enterprise.  Helped defend the world's largest software development platform and ecosystem through security team leadership, corporate crisis management, product security strategy, incident response and threat detection, risk assessment, and threat intelligence.  Demonstrated success building and scaling an empathetic, human-first security program that empowered and secured a remote-first, web scale organization.</p>
+</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Director, Security Strategy</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Jul, 2021 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>Serving as a strategic advisor to the CSO/SVP of Engineering and providing accountable planning and leadership for critical company-wide initiatives.</p>
+</div><ul><li class="mop-wrapper"><p>Led GitHub's global preparation for and response to the war in Ukraine, ensuring the safety of employees, readying the business to respond to revenue implications and trade compliance obligations, and coordinating public policy and internal/external communications.</p>
+</li><li class="mop-wrapper"><p>Developed and initiated a multi-year plan to bring 2FA to millions of developers using GitHub.com.</p>
+</li><li class="mop-wrapper"><p>Provided strategic advising for executive and Revenue leadership regarding the risks associated with a significant product shift.</p>
+</li><li class="mop-wrapper"><p>Conceptualized and initiated a variety of strategic risk reduction programs in response to a major security incident including traditional security control improvements and product security improvements.</p>
+</li><li class="mop-wrapper"><p>Mentored and advised senior and developing technical and people leaders across the company.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Director, GitHub Corporate Information Security</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Jan, 2021 - Jul, 2021</span><span><i class="icon-clock mr-5"></i>6 months</span></small></p><div class="mop-wrapper space-bottom"><p>Growing and maturing a compliant corporate security, incident response, threat detection, and threat intelligence team at web scale.</p>
+</div><ul><li class="mop-wrapper"><p>Planned and executed a significant reorganization of detection, response, intelligence, and corporate security functions including the establishment of a Product Security Incident Response Team (PSIRT).</p>
+</li><li class="mop-wrapper"><p>Provided interim leadership support for GitHub Security and assisted GitHub's search for and onboarding of a permanent security executive.</p>
+</li><li class="mop-wrapper"><p>Coordinated response to and communications for a security incident resulting in the termination of all active user sessions on GitHub.com.</p>
+</li><li class="mop-wrapper"><p>Represented GitHub before US Federal Regulators.</p>
+</li><li class="mop-wrapper"><p>Completed a multi-year stint in team leadership with no voluntary attrition.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Manager, Security Incident Response Team (SIRT)</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Apr, 2020 - Jan, 2021</span><span><i class="icon-clock mr-5"></i>9 months</span></small></p><div class="mop-wrapper space-bottom"><p>Building and leading a compliant incident response, threat detection, and threat intelligence team at web scale.</p>
+</div><ul><li class="mop-wrapper"><p>Scaled GitHub's incident response and threat detection team by a factor of four.</p>
+</li><li class="mop-wrapper"><p>Coordinated significant web scale incident response including cross-company events with Microsoft.</p>
+</li><li class="mop-wrapper"><p>Planned and executed a seamless organization-wide deployment of FIDO/WebAuthn MFA.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Manager, Security Incident Response Team (SIRT)</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Mar, 2018 - Apr, 2020</span><span><i class="icon-clock mr-5"></i>2 years 1 month</span></small></p><div class="mop-wrapper space-bottom"><p>Building and leading a compliant incident response, threat detection, and threat intelligence team at web scale.</p>
+</div><ul><li class="mop-wrapper"><p>Developed a sustainable, SOC2 and FedRAMP-Tailored compliant detection and response program.</p>
+</li><li class="mop-wrapper"><p>Led detection and response related functions through a significant period of company growth and acquisition.</p>
+</li><li class="mop-wrapper"><p>Provided company-wide coordination for large scale security incidents including executive communications and risk assessment.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Incident Response Analyst</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Aug, 2016 - Mar, 2018</span><span><i class="icon-clock mr-5"></i>1 year 6 months</span></small></p><div class="mop-wrapper space-bottom"><p>Incident response, threat detection, and threat intelligence at web scale.</p>
+</div><ul><li class="mop-wrapper"><p>Coordinated large-scale platform abuse and security incident response activity.</p>
+</li><li class="mop-wrapper"><p>Managed a multi-million dollar logging infrastructure overhaul to support detection and site operations.</p>
+</li><li class="mop-wrapper"><p>Developed a sustainable incident post-mortem analysis framework.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Information Security Architect</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Dec, 2015 - Aug, 2016</span><span><i class="icon-clock mr-5"></i>8 months</span></small></p><div class="mop-wrapper space-bottom"><p>Principal information security SME and leader; responsible for the design, operation, and/or oversight of all information security systems.</p>
+</div><ul><li class="mop-wrapper"><p>Provided planning and guidance for all information security initiatives.</p>
+</li><li class="mop-wrapper"><p>Researched TTPs and designed effective countermeasures in partnership with operational staff.</p>
+</li><li class="mop-wrapper"><p>Incident response leader and advisor.</p>
+</li><li class="mop-wrapper"><p>Risk assessment, vulnerability analysis, SIEM.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Network Security Engineer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">May, 2012 - Dec, 2015</span><span><i class="icon-clock mr-5"></i>3 years 7 months</span></small></p><div class="mop-wrapper space-bottom"><p>Served as the primary network security administrator and information security professional; responsible for the design, operation, and review of critical network and security systems.</p>
+</div><ul><li class="mop-wrapper"><p>Primary responsibility for most information security functions.</p>
+</li><li class="mop-wrapper"><p>Second level incident responder and incident response leader.</p>
+</li><li class="mop-wrapper"><p>Risk assessment, vulnerability analysis, SIEM.</p>
+</li><li class="mop-wrapper"><p>Successfully led implementation of a complete network and security overhaul over two fiscal years.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Network Engineer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Aug, 2011 - May, 2012</span><span><i class="icon-clock mr-5"></i>9 months</span></small></p><div class="mop-wrapper space-bottom"><p>Responsible for the design and operation of critical network and security systems.</p>
+</div><ul><li class="mop-wrapper"><p>Focus on enterprise firewalls, SIEM, and network monitoring.</p>
+</li><li class="mop-wrapper"><p>Led design efforts for a complete network and security overhaul featuring NGFWs.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>IT Support Associate</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Aug, 2008 - Aug, 2011</span><span><i class="icon-clock mr-5"></i>3 years</span></small></p><div class="mop-wrapper space-bottom"><p>Served as desktop security coordinator and primary incident responder.</p>
+</div><ul><li class="mop-wrapper"><p>Responded to and remediated 200+ security incidents.</p>
+</li><li class="mop-wrapper"><p>Led efforts to overhaul endpoint security posture to include: anti-virus replacement, implementation of third-party patch management, and the introduction of limited privilege computing.</p>
+</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Security Leadership</strong><div class="space-top labels"><span class="label label-keyword"><p>Hiring</p>
+</span><span class="label label-keyword"><p>Professional Development and Mentoring</p>
+</span><span class="label label-keyword"><p>Security-positive Culture</p>
+</span><span class="label label-keyword"><p>Program and Process Development</p>
+</span><span class="label label-keyword"><p>Compliance</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Strategy, Planning, and Advising</strong><div class="space-top labels"><span class="label label-keyword"><p>Security Strategy and Planning</p>
+</span><span class="label label-keyword"><p>Product Security Strategy and Planning</p>
+</span><span class="label label-keyword"><p>Senior Leader and Executive Advising</p>
+</span><span class="label label-keyword"><p>Business Risk Assessment</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Corporate Crisis Management</strong><div class="space-top labels"><span class="label label-keyword"><p>Company-wide Crisis Coordination</p>
+</span><span class="label label-keyword"><p>Internal and External Communications</p>
+</span><span class="label label-keyword"><p>Executive Advising and Briefing</p>
+</span><span class="label label-keyword"><p>Sanctions and Trade Compliance</p>
+</span><span class="label label-keyword"><p>Global Business Risk</p>
+</span><span class="label label-keyword"><p>Regulatory Experience</p>
+</span><span class="label label-keyword"><p>Physical Safety</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Incident Response</strong><div class="space-top labels"><span class="label label-keyword"><p>Incident Coordination</p>
+</span><span class="label label-keyword"><p>External Communications</p>
+</span><span class="label label-keyword"><p>Coordinated Vulnerability and Incident Disclosure</p>
+</span><span class="label label-keyword"><p>Terms of Service and Privacy Policy</p>
+</span><span class="label label-keyword"><p>Experience with Law Enforcement and Litigation</p>
+</span><span class="label label-keyword"><p>Executive Briefings</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Intermediate" data-placement="left"><div class="skill-progress intermediate"></div></div><div class="skill-info"><strong>Threat Detection</strong><div class="space-top labels"><span class="label label-keyword"><p>Sustainable Alerting</p>
+</span><span class="label label-keyword"><p>Detection Enrichment</p>
+</span><span class="label label-keyword"><p>MITRE ATT&amp;CK</p>
+</span><span class="label label-keyword"><p>Distributed Alerting</p>
+</span><span class="label label-keyword"><p>Metrics</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Intermediate" data-placement="left"><div class="skill-progress intermediate"></div></div><div class="skill-info"><strong>Threat Intelligence</strong><div class="space-top labels"><span class="label label-keyword"><p>Actor Tracking and Profiling</p>
+</span><span class="label label-keyword"><p>Intelligence Sharing</p>
+</span><span class="label label-keyword"><p>External Collaboration</p>
+</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Information Assurance, MSIT,&nbsp;</strong>University of Maryland University College</p><p class="text-muted"><small>Jan, 2010 - Jan, 2011</small></p><i></i><div class="space-top labels"><span class="label label-keyword"><p>NSA/DHS National Center for Academic Excellence in Information Assurance and Cyber Defense Education</p>
+</span></div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Political Science, BA,&nbsp;</strong>Salisbury University</p><p class="text-muted clear-margin"><small>Jan, 2004 - Jan, 2009</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="publications"><div class="icon"><i class="fs-lg icon-newspaper"></i><span class="mobile-title">Publications</span></div><div class="info"><h4 class="title text-uppercase">Publications</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="https://swannysec.net/2020/03/08/on-risk-incident-response-and-coronavirus.html" target="_blank">On Risk, Incident Response, and Coronavirus</a>&nbsp;,&nbsp;</strong>Self-Published</p><p class="text-muted"><small>Published on: Mar 08, 2020</small></p><div class="mop-wrapper"><p>Thoughts on risk management and incident response through the lens of preparing for COVID-19.</p>
+</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="https://github.blog/2019-05-14-git-ransom-campaign-incident-report/" target="_blank">Git ransom campaign incident report—Atlassian Bitbucket, GitHub, GitLab</a>&nbsp;,&nbsp;</strong>Co-authored - GitHub Blog</p><p class="text-muted"><small>Published on: May 14, 2019</small></p><div class="mop-wrapper"><p>Coordinated public incident report regarding git ecosystem abuse.</p>
+</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="http://www.datacenterdynamics.com/security-risk/data-centers-dont-need-backdoors-at-least-not-the-digital-kind/95729.article" target="_blank">&quot;Data centers don’t need backdoors, at least not the digital kind&quot;</a>&nbsp;,&nbsp;</strong>Michael Kassner - DatacenterDynamics</p><p class="text-muted"><small>Published on: Mar 02, 2016</small></p><div class="mop-wrapper"><p>Provided quotes for an article on Fall 2015 Juniper backdoor incident.</p>
+</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="http://www.techrepublic.com/article/why-smbs-should-build-a-threat-intelligence-program-no-tech-investment-required/" target="_blank">&quot;Why SMBs should build a threat intelligence program -- no tech investment required&quot;</a>&nbsp;,&nbsp;</strong>Michael Kassner - TechRepublic</p><p class="text-muted"><small>Published on: Feb 10, 2016</small></p><div class="mop-wrapper"><p>Provided quotes and context based on a previous blog post.</p>
+</div></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
+  var toggleFloatingMenu = function() {
+    $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+    $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+  };
 
-    </style>
-  </head>
+  $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+  $( "[data-toggle=tooltip]" ).tooltip();
+  $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+    e.preventDefault();
+    toggleFloatingMenu();
+  });
+  $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
 
-  <body itemscope itemtype="http://schema.org/Person">
-    <script>
-      window.onload = function () {
-        var toggleFloatingMenu = function() {
-          $( '.js-floating-nav' ).toggleClass( 'is-visible' );
-          $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
-        };
+  $("#remaining-profiles").on('show.bs.collapse', function() {
+    $( '.js-profiles-collapse > i' )
+      .removeClass( 'icon-chevron-down' )
+      .addClass( 'icon-chevron-up' );
+  });
 
-        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
-        $( "[rel=tooltip]" ).tooltip();
-        $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
-          e.preventDefault();
-          toggleFloatingMenu();
-        });
-        $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
-      }
-    </script>
-    <div class="container-fluid">
-      <div class="row main clearfix">
-        <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
-          <i class="fa fa-bars"></i>
-          <span class="close-icon">&times;</span>
-        </a>
-        <nav class="floating-nav js-floating-nav">
-          <ul class="list-unstyled">
-            <li>
-              <a href="#about">
-                <i class="fa fa-user"></i>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#work-experience">
-                <i class="fa fa-building"></i>
-                Work Experience
-              </a>
-            </li>
-            <li>
-              <a href="#skills">
-                <i class="fa fa-code"></i>
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#education">
-                <i class="fa fa-mortar-board"></i>
-                Education
-              </a>
-            </li>
-              <li>
-                <a href="#awards">
-                  <i class="fa fa-trophy"></i>
-                  Awards
-                </a>
-              </li>
-              <li>
-                <a href="#volunteer-work">
-                  <i class="fa fa-child"></i>
-                  Volunteer Work
-                </a>
-              </li>
-              <li>
-                <a href="#publications">
-                  <i class="fa fa-book"></i>
-                  Publications
-                </a>
-              </li>
-              <li>
-                <a href="#interests">
-                  <i class="fa fa-heart"></i>
-                  Interests
-                </a>
-              </li>
-          </ul>
-        </nav>
-
-        <section class="col-md-3 card-wrapper profile-card-wrapper affix">
-          <div class="card profile-card">
-              <span class="profile-pic-container">
-                <div class="profile-pic">
-                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
-                    alt="John D. Swanson" src="https://swannysec.net/public/avatar.jpg" itemprop="image">
-                </div>
-
-                <div class="name-and-profession">
-                  <h3 class="text-center text-bolder name" itemprop="name"> John D. Swanson</h3>
-                  <h5 class="text-muted text-center" itemprop="jobTitle">Network Security Engineer</h5>
-                </div>
-              </span>
-              <hr>
-
-              <div class="contact-details clearfix">
-
-                  <div class="detail">
-                    <span class="icon">
-                      <i class="fa fa-lg fa-location-arrow"></i>
-                    </span>
-                    <span class="info">
-                      Salisbury, Maryland, US
-                    </span>
-                  </div>
-
-
-                  <div class="detail">
-                    <span class="icon">
-                      <i class="fa fa-lg fa-envelope"></i>
-                    </span>
-
-                    <span class="info">
-                      <a href="/cdn-cgi/l/email-protection#483b3f29263b27266622272026662c082f25292124662b2725" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="0f7c786e617c60612165606761216b4f68626e6663216c6062">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>
-                    </span>
-                  </div>
-
-                  <div class="detail">
-                    <span class="icon">
-                      <i class="fa fa-lg fa-link"></i>
-                    </span>
-
-                    <span class="info">
-                      <a href="https://swannysec.net" target="_blank">https://swannysec.net</a>
-                    </span>
-                  </div>
-
-              </div>
-
-              <hr>
-
-              <div class="social-links text-center">
-                  <a class="fa fa-twitter fa-2x social-link link-twitter"
-                       href="https://twitter.com/swannysec" target="_blank"></a>
-              </div>
-          </div>
-        </section>
-
-        <section class="col-md-9 card-wrapper pull-right">
-          <div class="card background-card">
-            <h4 class="text-uppercase text-bolder">Background</h4>
-            <hr>
-
-            <div class="background-details">
-              <div class="detail" id="about">
-                <div class="icon">
-                  <i class="fa fa-lg fa-user"></i>
-                  <span class="mobile-title">About</span>
-                </div>
-                <div class="info">
-                  <h4 class="title text-uppercase">
-                    About
-                  </h4>
-
-                  <div class="content" itemprop="description">
-                    Information security professional with more than seven years of experience in information technology and security.  Specialties include network and security architecture and design, next-generation firewalls and intrusion prevention, vulnerability and risk assessment, information security awareness, and incident response.  Holds a Master’s Degree in Information Assurance from an NSA/DHS National Center for Academic Excellence in Information Assurance and Cyber Defense Education.
-                  </div>
-                </div>
-              </div>
-
-              <div class="detail" id="work-experience">
-                <div class="icon">
-                  <i class="fa fa-lg fa-building"></i>
-                  <span class="mobile-title">Work Experience</span>
-                </div>
-                <div class="info">
-                  <h4 class="title text-uppercase">
-                    Work Experience
-                  </h4>
-
-                  <ul class="list-unstyled">
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>Information Security Architect</strong>,&nbsp;
-                              <a href="https://www.salisbury.edu"  target="_blank">Salisbury University</a>
-                          </p>
-                          <p class="text-muted">
-                            <small>
-                              <span class="space-right">
-                                Dec, 2015 -
-                                  May, 2016
-                              </span>
-
-                                <span>
-                                  <i class="fa fa-clock-o icon-left"></i>
-                                  5 months
-                                </span>
-                            </small>
-                          </p>
-                          <p>Principal information security SME and leader; responsible for the design, operation, and/or oversight of all information security systems.</p>
-                            <ul>
-                                <li> Provides planning and guidance for all information security initiatives. </li>
-                                <li> Researches current TTPs and designs effective countermeasures in partnership with operational staff. </li>
-                                <li> Incident response leader and advisor. </li>
-                                <li> Risk assessment, vulnerability analysis, SIEM. </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>Network Security Engineer</strong>,&nbsp;
-                              <a href="https://www.salisbury.edu"  target="_blank">Salisbury University</a>
-                          </p>
-                          <p class="text-muted">
-                            <small>
-                              <span class="space-right">
-                                May, 2012 -
-                                  Dec, 2015
-                              </span>
-
-                                <span>
-                                  <i class="fa fa-clock-o icon-left"></i>
-                                  3 years 7 months
-                                </span>
-                            </small>
-                          </p>
-                          <p>Served as the primary network security administrator and information security professional; responsible for the design, operation, and review of critical network and security systems.</p>
-                            <ul>
-                                <li> Primary responsibility for most information security functions. </li>
-                                <li> Second level incident responder and incident response leader. </li>
-                                <li> Risk assessment, vulnerability analysis, SIEM. </li>
-                                <li> Successfully led implementation of a complete network and security overhaul over two fiscal years. </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>Network Engineer</strong>,&nbsp;
-                              <a href="https://www.salisbury.edu"  target="_blank">Salisbury University</a>
-                          </p>
-                          <p class="text-muted">
-                            <small>
-                              <span class="space-right">
-                                Aug, 2011 -
-                                  May, 2012
-                              </span>
-
-                                <span>
-                                  <i class="fa fa-clock-o icon-left"></i>
-                                  9 months
-                                </span>
-                            </small>
-                          </p>
-                          <p>Responsible for the design and operation of critical network and security systems.</p>
-                            <ul>
-                                <li> Focus on enterprise firewalls, SIEM, and network monitoring. </li>
-                                <li> Led design efforts for a complete network and security overhaul featuring NGFWs. </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>IT Support Associate</strong>,&nbsp;
-                              <a href="https://www.salisbury.edu"  target="_blank">Salisbury University</a>
-                          </p>
-                          <p class="text-muted">
-                            <small>
-                              <span class="space-right">
-                                Aug, 2008 -
-                                  Aug, 2011
-                              </span>
-
-                                <span>
-                                  <i class="fa fa-clock-o icon-left"></i>
-                                  2 years 11 months
-                                </span>
-                            </small>
-                          </p>
-                          <p>Served as desktop security coordinator and primary incident responder.</p>
-                            <ul>
-                                <li> Responded to and remediated 200+ security incidents. </li>
-                                <li> Led efforts to overhaul endpoint security posture to include: anti-virus replacement, implementation of third-party patch management, and the introduction of limited privilege computing. </li>
-                            </ul>
-                        </div>
-                      </li>
-                  </ul>
-                </div>
-              </div>
-
-                <div class="detail" id="skills">
-                  <div class="icon">
-                    <i class="fa fa-lg fa-code"></i>
-                    <span class="mobile-title">Skills</span>
-                  </div>
-                  <div class="info">
-                    <h4 class="title text-uppercase">
-                      Skills
-                    </h4>
-
-                    <div class="content">
-                      <ul class="list-unstyled">
-                          <li class="card card-nested card-skills">
-                              <div class="skill-level" rel="tooltip" title="Master" data-placement="left">
-                                <div class="skill-progress master">
-                                </div>
-                              </div>
-                            <div class="skill-info">
-                              <strong>Information Security</strong>
-
-                              <div class="space-top labels">
-                                  <span class="label label-keyword">Firewalls</span>
-                                  <span class="label label-keyword">SIEM</span>
-                                  <span class="label label-keyword">Vulnerability Management</span>
-                                  <span class="label label-keyword">Risk Assessment</span>
-                                  <span class="label label-keyword">Incident Response</span>
-                                  <span class="label label-keyword">Threat Intelligence</span>
-                                  <span class="label label-keyword">Palo Alto Networks</span>
-                                  <span class="label label-keyword">Splunk</span>
-                                  <span class="label label-keyword">Tenable Networks</span>
-                                  <span class="label label-keyword">Tufin</span>
-                                  <span class="label label-keyword">Maltego</span>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="card card-nested card-skills">
-                              <div class="skill-level" rel="tooltip" title="Intermediate" data-placement="left">
-                                <div class="skill-progress intermediate">
-                                </div>
-                              </div>
-                            <div class="skill-info">
-                              <strong>Networking</strong>
-
-                              <div class="space-top labels">
-                                  <span class="label label-keyword">Switching</span>
-                                  <span class="label label-keyword">Routing</span>
-                                  <span class="label label-keyword">Wireless</span>
-                                  <span class="label label-keyword">Network Design</span>
-                                  <span class="label label-keyword">Alcatel-Lucent</span>
-                                  <span class="label label-keyword">Juniper Networks</span>
-                                  <span class="label label-keyword">Aruba Networks</span>
-                                  <span class="label label-keyword">Solarwinds</span>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="card card-nested card-skills">
-                              <div class="skill-level" rel="tooltip" title="Intermediate" data-placement="left">
-                                <div class="skill-progress intermediate">
-                                </div>
-                              </div>
-                            <div class="skill-info">
-                              <strong>System Administration</strong>
-
-                              <div class="space-top labels">
-                                  <span class="label label-keyword">Windows Server</span>
-                                  <span class="label label-keyword">Ubuntu Server</span>
-                                  <span class="label label-keyword">CentOS</span>
-                                  <span class="label label-keyword">Microsoft SCCM</span>
-                              </div>
-                            </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-              <div class="detail" id="education">
-                <div class="icon">
-                  <i class="fa fa-lg fa-mortar-board"></i>
-                  <span class="mobile-title">Education</span>
-                </div>
-                <div class="info">
-                  <h4 class="title text-uppercase">
-                    Education
-                  </h4>
-
-                  <div class="content">
-                    <ul class="list-unstyled">
-                        <li class="card card-nested">
-                          <div class="content">
-                            <p class="clear-margin relative">
-
-                              <strong>Information Assurance, MSIT</strong>,&nbsp;
-                              University of Maryland University College
-                            </p>
-                            <p class="text-muted">
-                              <small>
-                                Sep, 2010 -
-                                  May, 2011
-                              </small>
-                            </p>
-                            <i>3.917</i>
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Upsilon Pi Epsilon Honor Society</span>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="card card-nested">
-                          <div class="content">
-                            <p class="clear-margin relative">
-
-                              <strong>Political Science, BA</strong>,&nbsp;
-                              Salisbury University
-                            </p>
-                            <p class="text-muted">
-                              <small>
-                                Sep, 2004 -
-                                  May, 2009
-                              </small>
-                            </p>
-                            <i>3.816</i>
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Phi Kappa Phi Honor Society</span>
-                                <span class="label label-keyword">Phi Alpha Theta Honor Society</span>
-                                <span class="label label-keyword">Pi Sigma Alpha Honor Society</span>
-                                <span class="label label-keyword">Pi Gamma Mu Honor Society</span>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-                <div class="detail" id="awards">
-                  <div class="icon">
-                    <i class="fa fa-lg fa-trophy"></i>
-                    <span class="mobile-title">Awards</span>
-                  </div>
-                  <div class="info">
-                    <h4 class="title text-uppercase">
-                      Awards
-                    </h4>
-
-                    <div class="content">
-                      <ul class="list-unstyled">
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin" itemprop="award">
-                                <strong>Splunk Certified Knowledge Manager</strong>,&nbsp;
-                                Splunk Inc.
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Awarded on: Nov 02, 2015
-                                </small>
-                              </p>
-                              <p class="clear-margin">  </p>
-                            </div>
-                          </li>
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin" itemprop="award">
-                                <strong>Splunk Certified Power User</strong>,&nbsp;
-                                Splunk Inc.
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Awarded on: Oct 29, 2015
-                                </small>
-                              </p>
-                              <p class="clear-margin">  </p>
-                            </div>
-                          </li>
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin" itemprop="award">
-                                <strong>Splunk Certified Admin</strong>,&nbsp;
-                                Splunk Inc.
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Awarded on: Nov 11, 2015
-                                </small>
-                              </p>
-                              <p class="clear-margin">  </p>
-                            </div>
-                          </li>
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin" itemprop="award">
-                                <strong>Palo Alto Accredited Configuration Engineer</strong>,&nbsp;
-                                Palo Alto Networks
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Awarded on: Nov 11, 2015
-                                </small>
-                              </p>
-                              <p class="clear-margin">  </p>
-                            </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="detail" id="volunteer-work">
-                  <div class="icon">
-                    <i class="fa fa-lg fa-child"></i>
-                    <span class="mobile-title">Volunteer Work</span>
-                  </div>
-                  <div class="info">
-                    <h4 class="title text-uppercase">
-                      Volunteer Work
-                    </h4>
-
-                    <div class="content">
-                      <ul class="list-unstyled">
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin relative">
-
-                                <strong>Chair, City Park Committee</strong>,&nbsp;
-                                  <a href="http://www.ci.salisbury.md.us/"  target="_blank">City of Salisbury, MD</a>
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Jun, 2004 -
-                                    Aug, 2008
-                                </small>
-                              </p>
-                              <p></p>
-                              <ul>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin relative">
-
-                                <strong>Hurricane Katrina Relief Effort Volunteer</strong>,&nbsp;
-                                  American Red Cross
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Sep, 2005 -
-                                    Sep, 2005
-                                </small>
-                              </p>
-                              <p></p>
-                              <ul>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin relative">
-
-                                <strong>Assistant Coach</strong>,&nbsp;
-                                  Wicomico County Pop Warner Youth Football
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Aug, 2003 -
-                                    Jul, 2004
-                                </small>
-                              </p>
-                              <p></p>
-                              <ul>
-                              </ul>
-                            </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="detail" id="publications">
-                  <div class="icon">
-                    <i class="fa fa-lg fa-book"></i>
-                    <span class="mobile-title">Publications</span>
-                  </div>
-                  <div class="info">
-                    <h4 class="title text-uppercase">
-                      Publications
-                    </h4>
-
-                    <div class="content">
-                      <ul class="list-unstyled">
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin">
-                                <strong>
-                                    <a href="https://swannysec.net/2016/04/12/uncovering-a-new-angler-bedep-actor.html"  target="_blank">Uncovering a New Angler-Bedep Actor</a>
-                                </strong>,&nbsp;
-                                Self-Published
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Published on: Apr 12, 2016
-                                </small>
-                              </p>
-                              <p class="clear-margin">Detailed the process of uncovering a new Angler-Bedep malware actor using Maltego, ThreatCrowd, and PassiveTotal.</p>
-                            </div>
-                          </li>
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin">
-                                <strong>
-                                    <a href="http://www.datacenterdynamics.com/security-risk/data-centers-dont-need-backdoors-at-least-not-the-digital-kind/95729.article"  target="_blank">&quot;Data centers don’t need backdoors, at least not the digital kind&quot;</a>
-                                </strong>,&nbsp;
-                                Michael Kassner - DatacenterDynamics
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Published on: Mar 02, 2016
-                                </small>
-                              </p>
-                              <p class="clear-margin">Provided quotes for an article on Fall 2015 Juniper backdoor incident.</p>
-                            </div>
-                          </li>
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin">
-                                <strong>
-                                    <a href="http://www.techrepublic.com/article/why-smbs-should-build-a-threat-intelligence-program-no-tech-investment-required/"  target="_blank">&quot;Why SMBs should build a threat intelligence program -- no tech investment required&quot;</a>
-                                </strong>,&nbsp;
-                                Michael Kassner - TechRepublic
-                              </p>
-                              <p class="text-muted">
-                                <small>
-                                  Published on: Feb 10, 2016
-                                </small>
-                              </p>
-                              <p class="clear-margin">Provided quotes and context based on a previous blog post.</p>
-                            </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="detail" id="interests">
-                  <div class="icon">
-                    <i class="fa fa-lg fa-heart"></i>
-                    <span class="mobile-title">Interests</span>
-                  </div>
-                  <div class="info">
-                    <h4 class="title text-uppercase">
-                      Interests
-                    </h4>
-
-                    <div class="content">
-                      <ul class="list-unstyled">
-                          <li class="card card-nested">
-                            <p>
-                              <strong>Malware Analysis and OSINT</strong>
-                            </p>
-
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Tracking Malware Networks</span>
-                                <span class="label label-keyword">Tool Development Collaboration</span>
-                            </div>
-                          </li>
-                          <li class="card card-nested">
-                            <p>
-                              <strong>International Relations and Defense</strong>
-                            </p>
-
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Politics</span>
-                                <span class="label label-keyword">Intelligence</span>
-                                <span class="label label-keyword">Defense Technology</span>
-                            </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
-  <script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
-</html>
+  $("#remaining-profiles").on('hidden.bs.collapse', function() {
+    $( '.js-profiles-collapse > i' )
+      .removeClass( 'icon-chevron-up' )
+      .addClass( 'icon-chevron-down' );
+  });
+});
+</script><script>WebFontConfig = {
+  google: { families: [ 'Lato:300,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script></body></html>
